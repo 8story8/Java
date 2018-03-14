@@ -1,0 +1,42 @@
+2017-06-29 23:53:28,210 [Worker-60] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.springmvc.YOLOWA_FINAL:YOLOWA_FINAL:1.0.0-BUILD-SNAPSHOT @ C:\git\YOLOWA_FINAL\YOLOWA_FINAL\pom.xml.
+2017-06-29 23:54:33,927 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-29 23:54:33,952 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2017-06-29 23:54:34,604 [Worker-66] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-29 23:54:34,606 [Worker-66] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-06-30 00:01:55,292 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-30 00:01:55,308 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-30 00:01:55,308 [Worker-61] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-30 00:01:55,308 [Worker-61] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2017-06-30 00:03:11,218 [Worker-47] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.springmvc.yolowa_second:yolowa_second:1.0.0-BUILD-SNAPSHOT @ C:\git\yolowa_second\yolowa_second\pom.xml.
+2017-06-30 00:03:12,686 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-30 00:03:12,686 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2017-06-30 00:03:12,749 [Worker-47] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-30 00:03:12,764 [Worker-47] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-06-30 00:04:16,174 [Worker-57] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.springmvc.yolowa:yolowa:1.0.0-BUILD-SNAPSHOT @ C:\git\yolowa\yolowa\pom.xml.
+2017-06-30 00:04:17,299 [Worker-57] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-30 00:04:17,299 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2017-06-30 00:04:17,377 [Worker-57] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-30 00:04:17,377 [Worker-57] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-06-30 00:05:08,381 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-30 00:05:08,397 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2017-06-30 00:05:11,616 [Worker-64] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-30 00:05:11,631 [Worker-64] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-06-30 00:05:13,116 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-30 00:05:13,241 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2017-06-30 00:05:13,522 [Worker-58] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-06-30 00:05:13,522 [Worker-58] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-08-11 15:44:50,555 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.springmvc.YOLOWA_FINAL:YOLOWA_FINAL:1.0.0-BUILD-SNAPSHOT @ C:\git\YOLOWA_FINAL\YOLOWA_FINAL\pom.xml.
+2017-08-11 15:44:52,776 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.springmvc.yolowa:yolowa:1.0.0-BUILD-SNAPSHOT @ C:\git\yolowa\yolowa\pom.xml.
+2017-08-11 15:44:52,931 [Worker-7] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: org.springmvc.yolowa_second:yolowa_second:1.0.0-BUILD-SNAPSHOT @ C:\git\yolowa_second\yolowa_second\pom.xml.
+2017-08-11 15:45:17,455 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-11 15:45:17,464 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2017-08-11 15:45:17,894 [Worker-20] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-11 15:45:17,896 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2017-08-11 15:45:22,726 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-11 15:45:22,728 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2017-08-11 15:45:23,192 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-11 15:45:23,194 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2017-08-11 15:45:27,534 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-11 15:45:27,537 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2017-08-11 15:45:28,242 [Worker-5] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2017-08-11 15:45:28,244 [Worker-5] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
