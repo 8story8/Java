@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Thu Mar 23 23:01:27 KST 2017
+org.eclipse.jst.jee.server\:ajax-study4-json=C\:\\Users\\Moon\\Desktop\\Saiden\\Employment\\java-kosta\\WAS\\ajax-tomcat\\webapps\\ajax-study4-json
+org.eclipse.jst.jee.server\:ajax-study3-xml=C\:\\Users\\Moon\\Desktop\\Saiden\\Employment\\java-kosta\\WAS\\ajax-tomcat\\webapps\\ajax-study3-xml
+org.eclipse.jst.jee.server\:ajax-study1=C\:\\Users\\Moon\\Desktop\\Saiden\\Employment\\java-kosta\\WAS\\ajax-tomcat\\webapps\\ajax-study1
