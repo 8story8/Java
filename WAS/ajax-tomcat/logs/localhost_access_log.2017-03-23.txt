@@ -1,0 +1,6 @@
+127.0.0.1 - - [23/Mar/2017:23:00:39 +0900] "GET / HTTP/1.1" 200 11452
+0:0:0:0:0:0:0:1 - - [23/Mar/2017:23:00:44 +0900] "GET /ajax-study4-json/step1.html HTTP/1.1" 200 1968
+0:0:0:0:0:0:0:1 - - [23/Mar/2017:23:01:13 +0900] "POST /ajax-study4-json/CarJSONServlet HTTP/1.1" 200 35
+127.0.0.1 - - [23/Mar/2017:23:01:33 +0900] "GET / HTTP/1.1" 200 11452
+0:0:0:0:0:0:0:1 - - [23/Mar/2017:23:01:35 +0900] "GET /ajax-study3-xml/step1.html HTTP/1.1" 200 1388
+0:0:0:0:0:0:0:1 - - [23/Mar/2017:23:01:37 +0900] "POST /ajax-study3-xml/FindCarServlet HTTP/1.1" 200 30
