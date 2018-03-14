@@ -1,0 +1,60 @@
+<!-- 
+목록 요소에 그림 넣기
+ - 썸네일 : 작은 그림. 그림의 본래크기 보다 작게 나온다. 
+ <img>를 이용해 넣으면 됨
+ 
+ ******** 주의 : img는 a 요소내에 있어야 한다. 없으면 깨짐. 
+                    <a href="#">이면 
+                          즉 링크를 #으로 걸면 링크가 무시되어  
+                          아무 영향이 없다. 링크 빼면 깨진다. 
+ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"> 
+    <title>jQuery Mobile Application</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+</head>
+  <body>
+	<section id="page1" data-role="page">
+	  <header data-role="header"><h1>jQuery Mobile</h1>
+	
+	  </header>
+	  <div class="content" data-role="content">
+		<h3>Nested List Example</h3>		
+		<ul data-role="listview" >
+		  <li>음식점
+		    <ul>		      
+		      <li>
+		         <a href="#" ><img src="../images/h.jpg"  alt="한식점"  >한식  </a>
+		        <ul>
+		          <li><a href="#">김밥천국</a><a href="reservation.jsp?restaurant=1">예약하기</a></li>
+		          <li><a href="#">죠스떡볶이</a><a href="reservation.jsp?restaurant=2">예약하기</a></li>
+		          <li><a href="#">태성골뱅이</a><a href="reservation.jsp?restaurant=3">예약하기</a></li>
+		        </ul>
+		      </li>
+		      <li>
+		        <a href="#"><img src="../images/c.jpg"  alt="중식점"  >중식  </a>
+		        <ul>
+		          <li>중화루</li>
+		          <li>동천홍</li>
+		          <li>이것이짬뽕</li>
+		        </ul>
+		      </li>
+		      <li><a href="#"><img src="../images/j.jpg"  alt="일식점"  >일식  </a>
+		        <ul>
+		          <li>쿠노이치</li>
+		          <li>나고미</li>
+		          <li>키키자케</li>
+		        </ul>
+		      </li>
+		    </ul>
+		  </li>
+		</ul>
+	  </div>
+	  <footer data-role="footer"><h1>Restaurants</h1></footer>
+	</section>	
+  </body>
+</html>

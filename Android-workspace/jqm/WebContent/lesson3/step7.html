@@ -1,0 +1,75 @@
+<!-- 
+count bubble 	- 목록 뷰에서 count 정보를 보여주는 작은 아이콘
+				   	- 마크업 추가 후 class='ui-li-count'를 속성으로 추가한다.
+
+ex) <span class="ui-li-count">3</span>
+---------------------------
+동적으로 목록을 생성해 본다. 
+
+listview 위젯 초기화후 호출 할 수 있는 메소드 제공.
+목록 갱신 - refresh 메소드
+var obj = listview("refresh"); 갱신된 리스트뷰객체 
+초기화된 목록에서 항목(아이템) 추가 또는 뺄때 유용
+ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"> 
+    <title>jQuery Mobile Application</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<!-- jQuery로 동적생성을 테스트 -->
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#ch").click(function(){
+				var li="<li>콩짜장</li>";
+				//$(this).prepend(li); //문자열만 추가된다. 
+				//.listview("refresh") 로 처리해야 css 적용된다. 
+				$("#test").prepend(li).listview("refresh");
+			});
+		});
+	</script>
+</head>
+  <body>
+	<section id="page1" data-role="page">
+	  <header data-role="header"><h1>jQuery Mobile</h1>	  
+	  </header>
+	  <div class="content" data-role="content">
+		<h3>Nested List Example</h3>		
+		<ul data-role="listview" >
+		  <li><a href="#">음식점</a> <span class="ui-li-count">3</span>
+		    <ul>		      
+		      <li>
+		         <a href="#"><img src="../images/h.jpg"  alt="한식점"  >한식<span class="ui-li-count">3</span>  </a>
+		        <ul>
+		          <li><a href="#">김밥천국</a><a href="reservation.jsp?restaurant=1">예약하기</a></li>
+		          <li><a href="#">죠스떡볶이</a><a href="reservation.jsp?restaurant=2">예약하기</a></li>
+		          <li><a href="#">태성골뱅이</a><a href="reservation.jsp?restaurant=3">예약하기</a></li>
+		        </ul>
+		      </li>
+		      <li>
+		        <a href="#"><img src="../images/c.jpg"  alt="중식점"  >중식<span class="ui-li-count">3</span>  </a>
+		        <ul id="test">
+		          <li>중화루</li>
+		          <li>동천홍</li>
+		          <li>이것이짬뽕</li>
+		          <!-- 동적으로 생성해본다. -->
+		          <li> <a href="#" id="ch" data-role="button" data-icon="plus">추가</a></li>
+		        </ul>
+		      </li>
+		      <li><a href="#"><img src="../images/j.jpg"  alt="일식점"  >일식<span class="ui-li-count">3</span>  </a>
+		        <ul>
+		          <li>쿠노이치</li>
+		          <li>나고미</li>
+		          <li>키키자케</li>
+		        </ul>
+		      </li>
+		    </ul>
+		  </li>
+		</ul>
+	  </div>
+	  <footer data-role="footer"><h1>Restaurants</h1></footer>
+	</section>	
+  </body>
+</html>

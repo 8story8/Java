@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- phonegap 자바스크립트 링크 -->
+<script type="text/javascript"  src="cordova.js"></script>
+<!-- jquery mobile 페이지 레이아웃과 스타일을 정의 -->
+<link rel="stylesheet"
+  href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>  
+</head>
+<body>
+<!-- 첫 번째 페이지 시작 부분 -->
+   <section id="page1" data-role="page"> 
+      <header data-role="header">
+         <h1>HybridApp</h1>
+      </header>
+      <div class="content" data-role="content">
+         <p>메인페이지</p>
+         <p> <a href="#page2">두 번째 페이지로 전환하기 </a></p>       
+      </div>
+      <footer data-role="footer">
+         <h1> kosta</h1>
+      </footer>
+   </section>   
+<!-- 첫 번째 페이지 끝 부분-->
+  
+<!-- 두 번째 페이지 시작 부분 -->  
+   <section id="page2" data-role="page"> 
+      <header data-role="header">
+         <h1>HybridApp</h1>
+      </header>
+      <div class="content" data-role="content">
+         <p>두 번째 페이지 !</p>      
+      <p><a href="#page1" 
+               data-direction="reverse">  첫 번째  페이지로 돌아가기 </a></p>
+          <!--  직접 폰에서 테스트할때에는 자신의 ip로 수정한다.
+               (192.168.7.xxx)
+                  에뮬레이터 로컬 아이피  10.0.2.2
+           -->
+      <p><a href="http://192.168.0.178:8888/jqm/lesson3/step7.html">서버 연결하여 목록보기 </a></p>
+      
+      </div>
+    <footer data-role="footer">
+      <h1> kosta</h1>
+    </footer>
+  </section>
+<!-- 두 번째 페이지 끝 부분-->  
+ 
+</body>
+</html>
+
+
+
+

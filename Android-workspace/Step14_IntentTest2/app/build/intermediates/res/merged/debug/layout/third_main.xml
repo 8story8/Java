@@ -1,0 +1,25 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="#66FF00"
+    >
+    <EditText
+       android:id="@+id/addrEt"
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:hint="주소를 입력하세요"
+       ></EditText>
+    <Button 
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/inputok"
+       android:text="입력완료"
+        />
+</LinearLayout>
+
+
+
+
+

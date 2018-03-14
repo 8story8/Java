@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\java-kosta\Android-workspace\Step15_LifeCycleTest\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\java-kosta\Android-workspace\Step15_LifeCycleTest\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_7fa5cc8a135559801c33d9b9919d420aae7e9131\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\java-kosta\Android-workspace\Step15_LifeCycleTest\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="869a5035df4cce161e75dfc6ca45d35e82265838">
+        <dex dex="C:\java-kosta\Android-workspace\Step15_LifeCycleTest\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_86a3e393ff15ef063d47dc80ecbcd424cec84384\classes.dex" />
+    </item>
+
+</items>

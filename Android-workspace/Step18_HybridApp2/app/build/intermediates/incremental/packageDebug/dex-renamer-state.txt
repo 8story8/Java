@@ -1,0 +1,7 @@
+#Mon Jun 26 11:26:05 KST 2017
+base.0=C\:\\java-kosta\\Android-workspace\\Step18_HybridApp2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_784376a027c9598372fe29532830340a3c09ad01
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\java-kosta\\Android-workspace\\Step18_HybridApp2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_a5f66805a576a28a9974949cec4511af8a54079d\\classes.dex
+base.1=C\:\\java-kosta\\Android-workspace\\Step18_HybridApp2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_a5f66805a576a28a9974949cec4511af8a54079d
+file.0=C\:\\java-kosta\\Android-workspace\\Step18_HybridApp2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_784376a027c9598372fe29532830340a3c09ad01\\classes.dex

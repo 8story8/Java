@@ -1,0 +1,29 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+   >  
+   <TextView 
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+         android:text="인텐트 연습"
+        android:textSize="25dp"
+       android:background="@color/colorAccent"
+       />
+   <Button
+        android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:id="@+id/second"
+       android:text="SecondActivity call"
+       ></Button>
+</LinearLayout>
+
+
+
+
+
+
+
+
+

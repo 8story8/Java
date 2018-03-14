@@ -1,0 +1,16 @@
+#Mon Jun 26 10:53:22 KST 2017
+renamed.4=classes.dex
+renamed.3=classes5.dex
+renamed.2=classes2.dex
+renamed.1=classes3.dex
+base.4=C\:\\java-kosta\\Android-workspace\\Step17_HybridApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_7b5f25f70ffc29b6d8d70aba7f42f034020674be
+renamed.0=classes4.dex
+base.3=C\:\\java-kosta\\Android-workspace\\Step17_HybridApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\2\\cordova-2.8.0_7f97a4da127cfb0dc8de8c1ccb3d1138fc24a1a2
+base.2=C\:\\java-kosta\\Android-workspace\\Step17_HybridApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_ac1f61bd64bd9560bddbd67ea0dbaf71c22265d6
+base.1=C\:\\java-kosta\\Android-workspace\\Step17_HybridApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-23.1.1_1d3cbb5ab58f3eae850671ca7655cc1639069d2b
+base.0=C\:\\java-kosta\\Android-workspace\\Step17_HybridApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-23.1.1_4878d986ccf0f4624f087cf6fab0dece0095ca6c
+file.4=C\:\\java-kosta\\Android-workspace\\Step17_HybridApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_7b5f25f70ffc29b6d8d70aba7f42f034020674be\\classes.dex
+file.3=C\:\\java-kosta\\Android-workspace\\Step17_HybridApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\2\\cordova-2.8.0_7f97a4da127cfb0dc8de8c1ccb3d1138fc24a1a2\\classes.dex
+file.2=C\:\\java-kosta\\Android-workspace\\Step17_HybridApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_ac1f61bd64bd9560bddbd67ea0dbaf71c22265d6\\classes.dex
+file.1=C\:\\java-kosta\\Android-workspace\\Step17_HybridApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-23.1.1_1d3cbb5ab58f3eae850671ca7655cc1639069d2b\\classes.dex
+file.0=C\:\\java-kosta\\Android-workspace\\Step17_HybridApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-23.1.1_4878d986ccf0f4624f087cf6fab0dece0095ca6c\\classes.dex

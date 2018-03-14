@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\java-kosta\Android-workspace\Step11_UserDefineAdapter\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0471aefaed343540daa360227be033532d71a8a6">
+        <dex dex="C:\java-kosta\Android-workspace\Step11_UserDefineAdapter\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_8e6cdd0e738b78f545090951496b918fd2d73d8f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\java-kosta\Android-workspace\Step11_UserDefineAdapter\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\java-kosta\Android-workspace\Step11_UserDefineAdapter\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_d9569d2931f29b5334a027a9216f012719ea2c6d\classes.dex" />
+    </item>
+
+</items>

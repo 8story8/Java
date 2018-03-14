@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\java-kosta\Android-workspace\Step18_HybridApp2\app\libs\cordova-2.8.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="37a563bbb7809206e09b063fda0a7df9d6ef3e92">
+        <dex dex="C:\java-kosta\Android-workspace\Step18_HybridApp2\app\build\intermediates\transforms\dex\debug\folders\1000\2\cordova-2.8.0_595261afe2bfbb452f573108b0b23f8b7330c004\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\java-kosta\Android-workspace\Step18_HybridApp2\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\java-kosta\Android-workspace\Step18_HybridApp2\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_784376a027c9598372fe29532830340a3c09ad01\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\java-kosta\Android-workspace\Step18_HybridApp2\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7a88ff2a734362d1ec57ea9e55dc675359565050">
+        <dex dex="C:\java-kosta\Android-workspace\Step18_HybridApp2\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_a5f66805a576a28a9974949cec4511af8a54079d\classes.dex" />
+    </item>
+
+</items>

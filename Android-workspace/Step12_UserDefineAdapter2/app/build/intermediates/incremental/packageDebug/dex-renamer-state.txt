@@ -1,0 +1,7 @@
+#Mon Jun 26 09:51:10 KST 2017
+base.0=C\:\\java-kosta\\Android-workspace\\Step12_UserDefineAdapter2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_8c735d4d4213dca493c9402dd3faa59e73837823
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\java-kosta\\Android-workspace\\Step12_UserDefineAdapter2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_aa947d068f7dfc2149b11821da9a2c00b54c619c\\classes.dex
+base.1=C\:\\java-kosta\\Android-workspace\\Step12_UserDefineAdapter2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_aa947d068f7dfc2149b11821da9a2c00b54c619c
+file.0=C\:\\java-kosta\\Android-workspace\\Step12_UserDefineAdapter2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_8c735d4d4213dca493c9402dd3faa59e73837823\\classes.dex

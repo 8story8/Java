@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\java-kosta\Android-workspace\Step13_IntentTest\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="C:\java-kosta\Android-workspace\Step13_IntentTest\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_4f684267054e53ff7b1c2c9e113e66fea16ed41f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\java-kosta\Android-workspace\Step13_IntentTest\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.0"
+        sha1="3f3878b0ebd2765ae4fe8404391a750958f7a5f0">
+        <dex dex="C:\java-kosta\Android-workspace\Step13_IntentTest\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_68ead20f309ceaae5b376e7723fe9ae7e491e040\classes.dex" />
+    </item>
+
+</items>

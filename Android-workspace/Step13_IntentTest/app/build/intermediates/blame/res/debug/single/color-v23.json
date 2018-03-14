@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "C:\\java-kosta\\Android-workspace\\Step13_IntentTest\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "C:\\Users\\KOSTA\\.android\\build-cache\\e6efe7c596d45f29acfb8875961a31b08a22c540\\output\\res\\color-v23\\abc_color_highlight_material.xml"
+    },
+    {
+        "merged": "C:\\Users\\kosta-inst\\AndroidStudioProjects\\Step13_IntentTest\\app\\build\\intermediates\\res\\merged\\debug\\color-v23\\abc_color_highlight_material.xml",
+        "source": "C:\\Users\\kosta-inst\\AndroidStudioProjects\\Step13_IntentTest\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color-v23\\abc_color_highlight_material.xml"
+    }
+]

@@ -1,0 +1,7 @@
+#Mon Jun 26 10:16:24 KST 2017
+base.0=C\:\\java-kosta\\Android-workspace\\Step15_LifeCycleTest\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_7fa5cc8a135559801c33d9b9919d420aae7e9131
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=C\:\\java-kosta\\Android-workspace\\Step15_LifeCycleTest\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_86a3e393ff15ef063d47dc80ecbcd424cec84384\\classes.dex
+base.1=C\:\\java-kosta\\Android-workspace\\Step15_LifeCycleTest\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_86a3e393ff15ef063d47dc80ecbcd424cec84384
+file.0=C\:\\java-kosta\\Android-workspace\\Step15_LifeCycleTest\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_7fa5cc8a135559801c33d9b9919d420aae7e9131\\classes.dex

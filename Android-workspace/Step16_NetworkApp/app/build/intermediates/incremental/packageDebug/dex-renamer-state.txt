@@ -1,0 +1,7 @@
+#Mon Jun 26 10:32:05 KST 2017
+base.0=C\:\\java-kosta\\Android-workspace\\Step16_NetworkApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_3ba6e538e99d3d1d76af4114fabcd14d3128e20c
+renamed.1=classes.dex
+renamed.0=classes2.dex
+file.1=C\:\\java-kosta\\Android-workspace\\Step16_NetworkApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_2119f2df41e2f67cad951970265bca4b52aa38a6\\classes.dex
+base.1=C\:\\java-kosta\\Android-workspace\\Step16_NetworkApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_2119f2df41e2f67cad951970265bca4b52aa38a6
+file.0=C\:\\java-kosta\\Android-workspace\\Step16_NetworkApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_3ba6e538e99d3d1d76af4114fabcd14d3128e20c\\classes.dex

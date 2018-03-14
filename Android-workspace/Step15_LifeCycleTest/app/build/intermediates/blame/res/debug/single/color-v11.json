@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\java-kosta\\Android-workspace\\Step15_LifeCycleTest\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\kosta\\.android\\build-cache\\129e9e9f991ac203306eec673d0a26c11b273966\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "C:\\java-kosta\\Android-workspace\\Step15_LifeCycleTest\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\kosta\\.android\\build-cache\\129e9e9f991ac203306eec673d0a26c11b273966\\output\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\kosta-inst\\AndroidStudioProjects\\Step15_LifeCycleTest\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_light.xml",
+        "source": "C:\\Users\\kosta-inst\\AndroidStudioProjects\\Step15_LifeCycleTest\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color-v11\\abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\kosta-inst\\AndroidStudioProjects\\Step15_LifeCycleTest\\app\\build\\intermediates\\res\\merged\\debug\\color-v11\\abc_background_cache_hint_selector_material_dark.xml",
+        "source": "C:\\Users\\kosta-inst\\AndroidStudioProjects\\Step15_LifeCycleTest\\app\\build\\intermediates\\exploded-aar\\com.android.support\\appcompat-v7\\23.1.1\\res\\color-v11\\abc_background_cache_hint_selector_material_dark.xml"
+    }
+]

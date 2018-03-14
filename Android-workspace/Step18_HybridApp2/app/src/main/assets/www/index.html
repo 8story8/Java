@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- phonegap 자바스크립트 링크 -->
+<script type="text/javascript"  src="cordova.js"></script>
+<!-- jquery mobile 페이지 레이아웃과 스타일을 정의 -->
+<link rel="stylesheet"
+  href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+  <script type="text/javascript" charset="utf-8">
+    var pictureSource;   
+    var destinationType;
+     document.addEventListener("deviceready",onDeviceReady,false);
+     function onDeviceReady() {
+        pictureSource=navigator.camera.PictureSourceType;
+        destinationType=navigator.camera.DestinationType;
+    }
+	// 사진이 성공적으로 찍히면 동작할 함수 
+    function onPhotoDataSuccess(imageData) {
+      alert("onPhotoDataSuccess");
+      var showImage = document.getElementById('showImage');
+      showImage.style.display = 'block';
+
+      // 캡쳐된 사진을 보여주기 위한 인코딩 설정 
+      // 이미지를 재조정한다.       
+      showImage.src = "data:image/jpeg;base64," + imageData;
+    }      
+    function toCamera() {
+      alert("toCamera");
+      // Device의 카메라를 이용하기 위해서 Phonegap의 camera object를 이용한다. 
+      // 사진을 가져오기 위해 getPicture() api 를 이용
+      // 매개변수 첫번째. 성공시 동작할 function , 두번째 실패시 동작할 function , 
+      //세번째  성공시 동작할 함수에 데이터가 넘겨지는 방법
+      navigator.camera.getPicture(onPhotoDataSuccess, onFail, { quality: 50,
+        destinationType: destinationType.DATA_URL });
+    }
+    function onPhotoURISuccess(imageURI) {
+    	alert("onPhotoURISuccess");
+        var showImage = document.getElementById('showImage');
+        showImage.style.display = 'block';
+        showImage.src = imageURI;
+      }  
+    function toGallery() {
+    	alert("toGallery");
+        navigator.camera.getPicture(onPhotoURISuccess, onFail, { quality: 50, 
+        destinationType: destinationType.FILE_URI,
+        sourceType: pictureSource.PHOTOLIBRARY });
+    }
+	// 실패시 수행 
+    function onFail(message) {
+      alert('Failed because: ' + message);
+    }
+
+    </script>
+</head>
+<body>
+<!-- 첫 번째 페이지 시작 부분 -->
+   <section id="page1" data-role="page"> 
+      <header data-role="header">
+         <h1>PhoneGap</h1>
+      </header>
+      <div class="content" data-role="content">
+         <p>메인페이지</p>
+         <p> <a href="#page2">두 번째 페이지로 전환하기 </a></p>
+         <p><a href="#page3">폰갭으로 Device 제어</a></p>         
+      </div>
+      <footer data-role="footer">
+         <h1> kosta</h1>
+      </footer>
+   </section>   
+<!-- 첫 번째 페이지 끝 부분-->
+  
+<!-- 두 번째 페이지 시작 부분 -->  
+   <section id="page2" data-role="page"> 
+      <header data-role="header">
+         <h1>PhoneGap</h1>
+      </header>
+      <div class="content" data-role="content">
+         <p>두 번째 페이지 !</p>      
+      <p><a href="#page1" 
+               data-rel="back">  첫 번째  페이지로 돌아가기 </a></p>
+
+      </div>
+    <footer data-role="footer">
+      <h1> kosta</h1>
+    </footer>
+  </section>
+<!-- 두 번째 페이지 끝 부분-->  
+<!--  세번째 하드웨어 제어(카메라) 페이지 시작 -->
+ <section id="page3" data-role="page">
+	<header data-role="header">
+		<h1>하드웨어 제어</h1>
+	</header>
+	<div class="content" data-role="content">
+		<button onclick="toGallery()">앨범에서 이미지 가져오기</button>
+		<br> <img style="display: none; width: 300px; height: 300px;"
+			id="showImage" src="" /> 
+	</div>
+	<footer data-role="footer">
+		<h1>kosta</h1>
+	</footer>
+</section>
+<!--  세번째 하드웨어 제어(카메라) 페이지 끝 -->
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!-- 
+커스텀 select
+select 태그에 data-native-menu='false' 속성 추가 한다.
+
+select 에 multiple 속성을 주면 다중선택이 가능
+다중 선택이 되면 - 
+팝업위에 닫기 아이콘 생김
+선택 여부 체크박스 나옴
+다중 선택시 count bubble이 생김(몇개 선택했는지 카운트) - popup 말고 select 쪽에
+
+<optgroup> - option들을 그룹화 하는 태그. 옵션사이에 구분자 역할을 하는 헤더를 넣음.
+
+플레이스 홀더
+data-placeholder="true" 를 속성으로 지정한 것이 select 버튼에 표시한다.
+
+ -->
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>jQuery Mobile Application</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script
+	src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		// select 제어 테스트
+		$("#cb").click(function(){
+			//alert("click");
+			$("#test").append("<option value=참이슬>참이슬</option>");
+			$("#select-restaurants").selectmenu("refresh");
+		});
+	});
+	
+	</script>
+</head>
+<body>
+	<section id="page1" data-role="page">
+		<header data-role="header">
+			<h1>jQuery Mobile</h1>
+		</header>
+		<div class="content" data-role="content">
+			<h3>외식 선택</h3>
+			<label for="select-restaurants" >식당 고르세요:</label> <select
+				id="select-restaurants" name="select-restaurants"
+				data-native-menu="false" multiple="multiple">
+				<!-- data-placeholder="true" 빼고 비교해본다, 이 옵션을 주면 옵션 선택사항에서 제외된다.  -->
+				<option value="choose" data-placeholder="true">선택</option>
+				<optgroup label="한식" id="test">
+					<option value="김밥천국">김밥천국</option>
+					<option value="새마을식당">새마을식당</option>
+					<option value="한솥도시락">한솥도시락</option>
+				</optgroup>
+				<optgroup label="중식">
+					<option value="동천홍">동천홍</option>
+					<option value="중화루" disabled="disabled">중화루</option>
+					<option value="콩짜장">콩짜장</option>
+				</optgroup>
+			</select>
+				<a href="#" data-role="button" id="cb">동적 옵션 생성</a>
+		</div>
+		<footer data-role="footer">
+			<h1>form select test</h1>
+		</footer>
+	</section>
+
+</body>
+</html>

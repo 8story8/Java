@@ -1,0 +1,70 @@
+<!-- 
+step1
+툴바 - 
+1. 네비게이션 바
+block 요소에 data-role='navbar' 속성을 추가한다.
+ex) <nav data-role="navbar">
+네비게이션 바로 지정된 요소 내부의 a 요소들은 버튼 그룹으로 묶이며 
+버튼의 확성/비활성은 jQuery mobile이 알아서 처리 (선택하면 활성 나머지는 비활성되는 것). 
+class='ui-btn-active' 속성 지정하면 활성화 된 상태가 됨.
+
+step2 
+ajax json 연동 테스트 -> 툴바 선택하면 목록을 JSONArray로 받아와서 처리해본다. 
+ 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile Application</title>
+
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script
+	src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+<!--  jQuery Ajax json 으로 연동 -->
+<script type="text/javascript">
+	$(function() {
+		$("a").click(function() {
+			var bar = $(this).children().text();
+			$.getJSON("../JSONServlet", {
+				flag : bar
+			}, function(retData) {				
+				var str = "";
+				$.each(retData, function(index, value) {				
+					str += "<li><a href='#'>" + value + "</a></li>";
+				});//each 
+				// refresh 를 해야 jquery mobile 효과 적용된다. 
+				$("#dynamicList").html(str).listview("refresh");
+			});//getJSON    
+		});//click
+	});//function
+</script>
+</head>
+<body>
+	<section id="page1" data-role="page">
+		<header data-role="header">
+			<h1>jQuery Mobile</h1>
+			<nav data-role="navbar">
+				<ul>
+					<li><a href="#" class="ui-btn-active">한식</a></li>
+					<li><a href="#">중식</a></li>
+					<li><a href="#">일식</a></li>
+				</ul>
+			</nav>
+		</header>
+		<div class="content" data-role="content">
+			<h3>Content</h3>
+			<ul id="dynamicList" data-role="listview">
+			</ul>
+		</div>
+		<footer data-role="footer">
+			<h3>restaurant</h3>
+		</footer>
+	</section>
+
+
+
+</body>
+</html>

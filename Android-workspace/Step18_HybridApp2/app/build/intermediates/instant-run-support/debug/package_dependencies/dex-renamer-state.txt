@@ -1,0 +1,16 @@
+#Mon Jun 26 11:26:05 KST 2017
+renamed.4=classes3.dex
+renamed.3=classes4.dex
+renamed.2=classes.dex
+renamed.1=classes2.dex
+base.4=C\:\\java-kosta\\Android-workspace\\Step18_HybridApp2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-23.1.1_1d3cbb5ab58f3eae850671ca7655cc1639069d2b
+renamed.0=classes5.dex
+base.3=C\:\\java-kosta\\Android-workspace\\Step18_HybridApp2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-23.1.1_4878d986ccf0f4624f087cf6fab0dece0095ca6c
+base.2=C\:\\java-kosta\\Android-workspace\\Step18_HybridApp2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_7b5f25f70ffc29b6d8d70aba7f42f034020674be
+base.1=C\:\\java-kosta\\Android-workspace\\Step18_HybridApp2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_ac1f61bd64bd9560bddbd67ea0dbaf71c22265d6
+base.0=C\:\\java-kosta\\Android-workspace\\Step18_HybridApp2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\2\\cordova-2.8.0_595261afe2bfbb452f573108b0b23f8b7330c004
+file.4=C\:\\java-kosta\\Android-workspace\\Step18_HybridApp2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-23.1.1_1d3cbb5ab58f3eae850671ca7655cc1639069d2b\\classes.dex
+file.3=C\:\\java-kosta\\Android-workspace\\Step18_HybridApp2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-23.1.1_4878d986ccf0f4624f087cf6fab0dece0095ca6c\\classes.dex
+file.2=C\:\\java-kosta\\Android-workspace\\Step18_HybridApp2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_7b5f25f70ffc29b6d8d70aba7f42f034020674be\\classes.dex
+file.1=C\:\\java-kosta\\Android-workspace\\Step18_HybridApp2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_ac1f61bd64bd9560bddbd67ea0dbaf71c22265d6\\classes.dex
+file.0=C\:\\java-kosta\\Android-workspace\\Step18_HybridApp2\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\2\\cordova-2.8.0_595261afe2bfbb452f573108b0b23f8b7330c004\\classes.dex

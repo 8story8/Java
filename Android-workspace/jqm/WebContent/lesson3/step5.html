@@ -1,0 +1,75 @@
+<!-- 
+목록 뷰의 아이템에 링크 하나 더 걸기 - 분할된 번트
+실행해보면 (리스트명 선택 후) 왼쪽에 레스토랑 이름 오른쪽에 화살표 버튼이 있다. 
+이렇게 하나의 아이템에 두개의 선택 요소(a)를 넣는 경우
+목록 item에 <a> 링크 요소를 두개 넣으면 됨
+첫번째 것이 메인  영역이 되고 
+두번째 것이 오른쪽의 작은 영역이 된다. 
+아래 코드 예를 보면   주 , 부 영역 두가지가 나온다. 예약하기 문자열은 아이콘으로 대체된다. 
+<li>한식   
+		        <ul>
+		          <li><a href="#">김밥천국</a><a href="reservation.jsp?restaurant=1">예약하기</a></li>
+		          <li><a href="#">죠스떡볶이</a><a href="reservation.jsp?restaurant=2">예약하기</a></li>
+		          <li><a href="#">태성골뱅이</a><a href="reservation.jsp?restaurant=3">예약하기</a></li>
+		        </ul>
+</li>
+
+참고 : 
+li 내에 a는 여러개 넣을 수 있지만 맨 처음 것과 맨 마지막 것이 주/부 영역이 된다. 중간의 링크는 나오지 않으므로 의미가 없다.
+
+처리할 reservation.jsp 를 다이얼로그로 연동해본다. 
+ -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8"> 
+    <title>jQuery Mobile Application</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+  	
+  </head>
+  <body>
+	<section id="page1" data-role="page" >
+	  <header data-role="header" ><h1>jQuery Mobile</h1></header>
+	  <div class="content" data-role="content">
+		<h3>Nested List Example</h3>
+		<ul data-role="listview"  >
+		  <li>음식점
+		    <ul >
+		      <li>한식
+		        <ul > <!-- jsp 와 연동해본다. 결과는 다이얼로그로 띄운다. -->
+		          <li><a href="#">김밥천국</a>
+                 <a href="reservation.jsp?restaurant=김밥천국" data-rel="dialog">
+                 예약하기</a></li>
+		          <li><a href="#">죠스떡볶이</a>
+		          <a href="reservation.jsp?restaurant=죠스떡복이" data-rel="dialog">
+                 예약하기</a></li>
+		          <li><a href="#">태성골뱅이</a>
+		          <a href="reservation.jsp?restaurant=태성골뱅이" data-rel="dialog">
+                 예약하기</a>
+		          </li>
+		        </ul>
+		      </li>
+		      <li>중식
+		        <ul>
+		          <li>중화루</li>
+		          <li>동천홍</li>
+		          <li>이것이짬뽕</li>
+		        </ul>
+		      </li>
+		      <li>일식
+		        <ul>
+		          <li>쿠노이치</li>
+		          <li>나고미</li>
+		          <li>키키자케</li>
+		        </ul>
+		      </li>
+		    </ul>
+		  </li>
+		</ul>
+	  </div>
+	  <footer data-role="footer" ><h1>Restaurants</h1></footer>
+	</section>	
+  </body>
+</html>

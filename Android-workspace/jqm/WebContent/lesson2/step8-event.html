@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!-- 
+
+페이지 숨기기, 보이기 이벤트 -  페이지 이동시 이벤트 처리
+ 
+  단일 페이지에서의 페이지 이동이므로 onload 이벤트가 이동시에는 안걸린다. 
+ 즉 페이지가 로딩시 한번만 실행된다.
+ 이에 jQuery mobile은 다른 event를 발생 시킨다.
+ 이벤트 발생시 event와 ui 객체를 생성하여 call back 함수에서 받아 사용할 수 있다. 
+ 
+ pagebeforehide : 페이지 전환시작 전 전환 시작 페이지에서 발생. 
+ A -> B 일때 A에서 발생 : ui.nextPage 는 전환대상 페이지이고 페이지가 없으면 빈 jQuery 객체 리턴
+ 
+ pagebeforeshow : 페이지 전환 시작 전 전환 대상 페이지에서 발생. 
+ A -> B 일때 B에서 발생 : ui.prevPage는 전환 시작 페이지고 없으면 빈 jQuery 객체 리턴
+ 
+ pagehide : 페이지 전환 시작 페이지(A)에서 전환이 종료된 후 발생 :
+  ui.nextPage 는 전환대상 페이지이고 페이지가 없으면 빈 jQuery 객체 리턴
+ 
+ pageshow : 페이지 전환 대상 페이지(B)에서 전환이 종료된 후 발생 : 
+ ui.prevPage는 전환 시작 페이지고 없으면 빈 jQuery 객체 리턴
+ 
+ 각각의 event는 $(document).ready()와 비슷하게 어플리케이션 페이지 뷰에 대응하는 이벤트이다.
+ Listener는 bind(), on() 등을 사용해 등록 할 수 있다.
+ 
+ -----------사용 예--------------
+ 예를 들어 페이지가 보일때 마다 페이지 갱신이 필요한 경우(트윗 피트 채우기같이) 
+ pageshow에서 갱신처리(디비에서 조회등)한 내용을 보여준다.
+ -->
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>jQuery Mobile Application</title>
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){	
+		var count=0;
+		/*
+		pageshow
+		페이지 전환 대상 페이지(B)에서 전환이 종료된 후 발생 :
+	    ui.prevPage는 전환 시작 페이지고 없으면 빈 jQuery 객체 리턴
+		pageshow -> jQuery 적용해본다. 
+		*/
+		$("#page2").bind("pageshow",function(event,ui){
+			//alert("test");
+			//alert(ui.prevPage.html());
+			// 전환 시작 페이지요소 중 id가 nick 인 text를 가져온다. 
+			var n=ui.prevPage.find("#nick").text();
+			alert(n+" "+count++);
+			$("#nick2").text(n);
+		});
+		
+		//bind test
+		/* $("#nick").bind("click",function(){
+			alert($(this).text());
+		}); */
+		
+		
+	});
+	</script>
+  </head>
+  <body>
+   <!-- 첫페이지 시작 -->
+	<section id="page1" data-role="page">
+	  <header data-role="header"><h1>jQuery Mobile</h1></header>
+	  <div  data-role="content" class="content">
+	    <p>첫번째 페이지!<span id="nick">javaking</span></p>
+		<p><a href="#page2">두번째 페이지로!</a></p>
+	  </div>
+	  <footer data-role="footer"><h1> footer</h1></footer>
+	</section>
+	<!-- 첫페이지 끝 -->
+	
+	<!-- 두번째 페이지 -->
+	<section id="page2" data-role="page">
+	  <header data-role="header"><h1>jQuery Mobile</h1></header>
+	  <div data-role="content" class="content">
+	    <p>두번째 페이지! <span id="nick2"></span></p>
+		<p><a href="#page3">세번째 페이지로!</a></p>
+	  </div>
+	  <footer data-role="footer"><h1>footer</h1></footer>
+	</section>
+	<!-- 두번째 페이지 끝 -->
+	
+	<!-- 세번째 페이지 시작 -->
+	<section id="page3" data-role="page">
+	  <header data-role="header"><h1>jQuery Mobile</h1></header>
+	  <div data-role="content" class="content">
+	    <p>세번째 페이지!</p>
+		<p><a href="#page1">첫번째 페이지로!</a></p>
+	  </div>
+	  <footer data-role="footer"><h1>footer</h1></footer>
+	</section>
+	<!-- 세번째 페이지 끝 -->
+  </body>
+</html>

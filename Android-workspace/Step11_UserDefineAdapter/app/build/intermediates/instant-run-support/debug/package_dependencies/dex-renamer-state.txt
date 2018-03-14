@@ -1,0 +1,13 @@
+#Wed Jun 21 11:23:24 KST 2017
+renamed.3=classes.dex
+renamed.2=classes4.dex
+renamed.1=classes3.dex
+renamed.0=classes2.dex
+base.3=C\:\\java-kosta\\Android-workspace\\Step11_UserDefineAdapter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_35f9c1036d0a9c6b0a48a076c3d5da300c7da74b
+base.2=C\:\\java-kosta\\Android-workspace\\Step11_UserDefineAdapter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-23.1.1_b398a5a47d9a2c5a4f45cb809682d5dab80d9037
+base.1=C\:\\java-kosta\\Android-workspace\\Step11_UserDefineAdapter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-23.1.1_552feea25b1b75bc6be08bcb6d2a6bf44c533115
+base.0=C\:\\java-kosta\\Android-workspace\\Step11_UserDefineAdapter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_d1e67d8faae1363f59c460645ce83bd609e3518e
+file.3=C\:\\java-kosta\\Android-workspace\\Step11_UserDefineAdapter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_35f9c1036d0a9c6b0a48a076c3d5da300c7da74b\\classes.dex
+file.2=C\:\\java-kosta\\Android-workspace\\Step11_UserDefineAdapter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-annotations-23.1.1_b398a5a47d9a2c5a4f45cb809682d5dab80d9037\\classes.dex
+file.1=C\:\\java-kosta\\Android-workspace\\Step11_UserDefineAdapter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\internal_impl-23.1.1_552feea25b1b75bc6be08bcb6d2a6bf44c533115\\classes.dex
+file.0=C\:\\java-kosta\\Android-workspace\\Step11_UserDefineAdapter\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\classes_d1e67d8faae1363f59c460645ce83bd609e3518e\\classes.dex

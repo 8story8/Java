@@ -1,0 +1,59 @@
+<!-- 
+전환옵션 - transition
+페이지 이동하거나 대화상자(Dialog) 띄울때 animation.
+CSS3 transform을 이용. 브라우저가 css3을 지원해야 한다.
+
+전환을 명시하려면 data-transition 속성에 전환형태를 지정한다.
+
+flip : 현재 내용이 뒤집히면서 사라지고 다음 뷰가 나타남 
+pop : 화면 한가운데서 페이지가 솟아 오른다.
+fade : 현재 내용 위에 전환대상이 서서히 나타남
+slidedown : 화면 위에서부터 전환대상페이지가 내려오면서 현재 페이지를 덮는다.
+slide : 왼쪽이나 오른쪽에서 현재페이지를 밀어내면서 전환대상페이지가 나타남
+slideup : 화면 아래에서부터 전환대상페이지가 내려오면서 현재 페이지를 덮는다.
+
+back 버튼 추가 
+ <a href="#page1" data-role="button" data-icon="back">
+	   Back</a>
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Mobile Application</title>
+    <meta charset="UTF-8">
+	<link rel="stylesheet"
+  href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+
+  </head>
+  <body>
+<!-- 첫페이지 시작 -->
+	<section id="page1" data-role="page">
+	  <header data-role="header"><h1>jQuery Mobile</h1></header>
+	  <div  data-role="content" class="content">
+	    <p>첫번째 페이지!</p>
+		<p><!-- transition 테스트 -->
+		<a href="#page2" data-transition="pop">두번째 페이지로</a>
+		</p>
+	  </div>
+	  <footer data-role="footer"><h1> KOSTA</h1></footer>
+	</section>
+	<!-- 첫페이지 끝 -->
+	
+	<!-- 두번째 페이지 -->
+	<section id="page2" data-role="page">
+	  <header data-role="header" > 
+	   <a href="#page1" data-transition=flip data-role="button" data-icon="back">
+	   Back</a>
+	   <h1>jQuery Mobile</h1></header>
+	  <div data-role="content" class="content">
+	    <p>두번째 페이지!</p>	   
+	  </div>
+	  <footer data-role="footer"><h1>KOSTA</h1></footer>
+	</section>
+	<!-- 두번째 페이지 끝 -->
+	
+  </body>
+</html>
