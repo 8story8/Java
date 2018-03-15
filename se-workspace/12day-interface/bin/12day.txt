@@ -1,0 +1,34 @@
+**12일차 주요 목차**
+- 간단 복습
+Java 특징 - Platform Independent, Object-Oriented Language
+Object-Oriented - OOAD(Object-Oriented Analysis Design) - UML(Unified Modeling Language)
+Object - 시스템 기본 단위, 속성과 기능으로 구성
+Class - Object의 설계도
+Java Data Type - Primitive Data Type, Reference Data Type
+class structure - package -> import -> class -> instance variable or class variable  -> constructor -> method
+제어문 - 조건문(if, switch), 반복문(for, while, do~while)
+변수의 종류 - Instance Variable, Local Variable, Class Variable(Static Variable)
+Array - 다수의 Data를 관리하는 Object
+**Object-Oriented 주요 개념 - Encapsulation, Inheritance, Polymorphism
+Overloading - 다양한 Parameter, Overriding : 부모 Method 재정의
+this - 자기 Object, super - 부모 Object
+static - Object 생성없이 클래스명으로 접근해 사용 가능, Class Loading시 Memory(Method Aread)에 한 번 적재
+abstract : 추상, 자식에게 구체화를 강제, 표준화에 기여, 직접 객체화될 수 없으나 부모로서의 상속과 다형성은 모두 지원          
+
+- Interface
+  다양한 계층 구조 형성을 통한 다형성 적용
+  다중 상속의 효과
+  -> 상속의 장점은 부모 멤버를 물려받고 계층 구조 형성을 통한 다형성 적용 환경을 마련하는데 있다.
+      -> 인터페이스는 상속의 장점 중 계층 구조 형성을 통한 다형성 적용
+          -> 인터페이스는 다중 상속(구현)이 가능
+              ex) public class SuperMan extends Person implements Flyer, Fighter{ }
+              -> 인터페이스는 추상 메서드와 상수를 정의한다.
+                  (단, jdk 1.8 ~는 static 메서드 정의 가능)
+                  -> 인터페이스끼리는 상속이 가능하다.
+                      ex) public interface A extends B{ } 
+  abstract와 interface 비교
+  공통점 : 추상 메서드를 통해 하위 클래스에 구현 강제 -> 표준화
+             직접 객체화될 수 없다.
+  차이점 : abstract는 단일 상속, 멤버를 자식에게 물려줄 수 있다.
+             interface는 다중 상속(구현)
+          

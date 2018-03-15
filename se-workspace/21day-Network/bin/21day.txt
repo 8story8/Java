@@ -1,0 +1,38 @@
+**21일차 주요 목차**
+Network
+
+Java TCP/IP Protocol 기반 Network Program
+주요 Package : java.net.*;
+주요 Class : java.net.ServerSocket
+			   java.net.Socket
+			   
+Protocol : 통신 규약(약속)
+
+TCP(Transmission Control Protocol) : 전송 제어 Protocol
+												데이터 전달의 신뢰성이 높은 전송 제어 규약
+												
+IP(Internet Protocol) : Host 주소 지정
+							 ex) DOS Console에서 ipconfig를 입력하면 ip를 확인
+							      자신의 컴퓨터 ip : 127.0.0.1 or 192.168.0.54
+							      강사 컴퓨터 ip : 192.168.0.72
+							      친구 ip : 192.168.0.76
+							      ref) DNS(Domain Name System)
+							      	   DNS로 IP를 연결해서 Client에게 Service한다.
+
+Port : 가상의 연결 단위, Service 입구(번호)
+ 		ex) http://192.168.0.72:5432
+ 		Port는 일반적으로 1 ~ 65535까지 사용 가능하고
+ 		1024 Port까지 사용하는 경우가 많으므로,
+ 		신규 서비스일 때는 그 이후 Port를 지정하는 것이 바람직하다.
+
+step1										
+Server								Client
+ServerSocket(port)					Socket(ip, port)
+accept() : Socket					
+socket.getOutputStream()		socket.getInputStream()
+close()								close()
+
+다수의 Client가 접속하면 Server는 종료되지 않고 계속 메세지를 출력하도록 Code를 Update
+--> 반복문(Loop)을 이용해 accept()와 Socket을 이용한 출력을 접속한 Client별로 실행하도록 만든다.
+							     
+ 

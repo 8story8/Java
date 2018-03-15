@@ -1,0 +1,10 @@
+**19일차 주요 목차**
+Object Serialization
+- Object의 정보를 Byte 단위의 Data로 변환해,
+  외부(File 또는 Network)로 전송할 수 있는 상태로 만드는 것을 의미한다.
+- 이것을 구현하기 위해서는 반드시 해당 Class가 implements Serializable해야 한다.
+- 즉, 직렬화된 대상 Object가 java.io.Serializable 인터페이스의 계층 구조 하위로 편입될 때,
+  Object Serialization이 지원된다는 것을 의미한다.
+
+transient : 객체 직렬화 대상에서 제외시킬 때 변수 앞에 명시하는 Modifier
+

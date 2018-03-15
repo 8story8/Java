@@ -1,0 +1,30 @@
+**7일차 주요 목차**
+ - Reference Data Type을 저장하는 배열
+   1) Array 선언
+      Person [] pa;
+   2) Array 생성
+      pa = new Person[3];
+   3) Array 요소에 할당
+      pa[0] = new Person("아이유", 22);
+      System.in.println(pa[0].getName());   // 아이유
+      
+      선언 생성 할당 동시에
+      Person[] pa = {new Person("아이유", 22), new Person("설현", 20)};
+      
+ - Overloading
+   다양한 Parameter를 정의
+   같은 이름의 Method(or Constructor)가 다양한 Parameter를 정의하므로 사용자 편의성을 높인다.
+      
+ **8일차 주요 목차**
+ Inheritance
+ 기존의 Class를 재사용하여 새로운 Class를 작성
+ Code의 재사용성을 높이고 중복을 제거하여 Program의 생산성과 유지보수에 크게 기여
+ 
+ super Keyword
+ 자손 Class에서 조상 Class로부터 상속받은 멤버를 참조하는데 사용되는 참조 변수
+
+ Overriding
+ 조상 Class로부터 상속받은 Method의 내용을 변경하는 것
+
+ Polymorphism
+ 조상 Class 타입의 참조 변수로 자손 Class의 Instance를 참조할 수 있도록 구현한 것

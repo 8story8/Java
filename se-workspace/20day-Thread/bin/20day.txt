@@ -1,0 +1,36 @@
+**20일차 주요 목차**
+- Thread 개념
+  Process : 현재 실행 중인 프로그램
+  Thread : Process 내의 세부적 실행 단위
+  			  ref) 사전적인 의미는 실, 여러 개의 실이 모여 옷감이 만들어진다.
+  Multi-Threading : 다수의 Thread가 동시에 실행
+  						 ex) 동영상 플레이어 실행(Process)
+  						  	  영상 Thread + 음향 Thread + 자막 Thread 등이 Multi-Threading
+- Thread 생성
+  1) extends Thread
+  2) implements Runnable
+
+- Thread 실행 흐름 및 제어
+  start() : Thread를 Runnable 상태로 보낸다.
+            이후 JVM에 의해 Scheduling을 받으면 실행 상태로 바뀐다는 것을 의미한다.
+  run() : Thread 실행
+           JVM에 의해 호출되어 Thread가 실행된다.
+  Thread Priority
+  Java Thread Priority는 1 ~ 10까지 있고,
+  Default는 5, 가장 낮은 것은 1, 가장 높은 것은 10이다.
+  Thread Priority를 설정하면 Scheduling시에 Schedule 확률이 높아지거나 낮아질 수 있다.
+  
+- synchronized(동기화 처리)
+  Java Thread는 Data를 공유할 수 있다. -> Server 자원을 절약
+  다시 말하면 여러 Thread는 하나의 자원을 공유해서 사용할 수 있다.
+  공유된 자원(Data)을 여러 Thread가 조작할 경우 발생할 수 있는 문제에 대비해야 한다.
+  이 문제를 synchronized(동기화 처리)로 특정 부분은 단일 Thread 실행 환경으로 만든다.
+  ex) 화장실(열쇠)
+  	   DBCP(DataBase Connection Pool)
+  
+**Thread Safe**
+Multi-Threading시 안전성 여부(synchronized되어 있다는 의미)
+synchronized  		non-synchronized  
+Vector				ArrayList : synchronized 가능
+Hashtable			HashMap : synchronized 가능
+StringBuffer			StringBuilder

@@ -1,0 +1,67 @@
+**2일차 목차**
+
+Java 특징
+Platform Independent : "Write Once, Run Anywhere"
+JVM(Java Virtual Machine)이 통역자 역할을 담당, 실행 주체
+Object-Oriented Language
+JDK(Java Development Kit) > JRE(Java Runtime Environment) > JVM(Java Virtual Machine)
+
+Object-Oriented 개념
+- Object
+  System의 기본 단위, 속성, 기능으로 구성
+  속성 : Variable, Attribute, Field
+  기능 : Method, Operation
+  ex) 자동차 객체의 속성 : 엔진, 바퀴, ...
+       자동차 객체의 기능 : 출발하다, 가속하다, 멈추다, ...
+- Class
+  Object 생성을 위한 틀 or 설계도
+- Object, Class의 관계
+  Class는 설계도이며 Object는 설계도로부터 생성되는 건물, 다대일 관계
+  ex) 붕어빵 - 붕어빵 틀, 건물 - 설계도
+- Object-Oriented
+  System Analysis Design 기법 중 하나
+  Object를 기본 단위로 상정하고 Object간의 관계를 중심으로 System을 Analysis Design하는 것
+  
+ Object-Oriented의 주요 개념(다음주에 할 예정)
+ Encapsulation
+ Inheritance
+ Polymorphism
+ 
+Java 기본 문법(Class, Variable, Method)
+1) Class
+Object 생성을 위한 틀 or 설계도
+클래스명은 대문자로 시작, 합성어 첫글자 대문자
+[Access Modifier] class 클래스명{}
+ex) public class Person{}
+Package : Class들을 효과적으로 분려하여 관리하기 위해 사용
+Package 선언은 Class 가장 상단부에 작성
+ex) package org.kosta;
+     class Person{}
+     --> Person Class는 org 디렉토리 하위의 kosta 디렉토리 하위의 Person.class로 저장
+2) Variable or Attribute
+Data를 저장하는 공간
+변수명은 소문자로 시작하고 합성어 첫글자는 대문자로 명시
+ex) memberName;
+[Access Modifier] 데이터타입 변수명;
+ex) public String name;
+3) Method(기능 or Method or Operation)
+Object의 기능을 표현 및 정의
+[Access Modifier] 리턴타입(없으면 void) 메서드명(){ 기능구현영역 }
+ex) public void study(){ 기능 구현부 }
+
+**3day 주요 목차**
+- Method : Passing Argument(Data 전달), Return Value(값 반환)
+- Object-Oriented 개념 중 Encapsulation(다음주 토론 후 발표)
+- Access Modifier 중 public, private, default
+- setter/getter
+- Constructor
+
+**Eclipse 단축키**
+sysout후 Ctrl + Space
+main후 Ctrl + Space
+영역 지정 후 Ctrl + Shift + /하면 주석 지정
+영역 지정후 Ctrl + Shift + \하면 주석 해제
+영역 지정 후 Ctrl + Shift + F하면 Code 정렬
+Ctrl + F11 : 실행
+
+

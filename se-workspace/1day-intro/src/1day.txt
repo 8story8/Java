@@ -1,0 +1,122 @@
+서정우
+tico99@hanmail.net
+
+Total Curriculum
+
+1. Java SE(1 month ~ 1 month 1 week)
+    - Java 환경 설정 및 개요
+    - Java Demo Program 작성 후, Compile 및 Execute
+    - Object-Oriented 개념
+    - Java 기본 문법(Class, Parameter, Method, Constructor)
+    - Data Type
+    - 조건문, 반복문
+    - Array
+    - Inheritance
+    - Polymorphism
+    - Static, Final
+    - Abstract, Interface
+    - Collection(Set, List, Map)
+    - Exception
+    - IO
+    - Thread
+    - Network
+
+**1일차 목차**
+- Java 환경 설정 및 개요
+- Java Demo Program 작성 후, Compile 및 Execute
+
+jdk 환경설정
+C:\Program Files\Java\jdk1.8.x\bin까지 시스템 환경변수에 path를 추가하여 어디서든 컴파일 및 실행이 되도록 한다. 
+환경 변수 추가 방법 : 컴퓨터 -> 마우스 오른쪽 버튼 -> 속성 -> 고급 시스템 설정 -> 환경 변수 -> 설치된 jdk 패스를 bin까지 복사 붙여넣기하여 추가한다.
+java는 컴파일 과정과 런타임(실행) 과정을 거쳐서 수행된다. 
+
+컴파일(compile) : 개발자가 작성한 java code를 jvm이 읽도록 기계어(bytecode)로 변환하는 과정 
+HelloWorld.java --컴파일--> HelloWorld.class 
+ex) javac HelloWorld.java 
+
+런타임(runtime) : .class 기계어를 java virtual machine이 운영체제에 번역하여 프로그램을 실행시키는 것
+ex) java HelloWorld 
+HelloWorld.java --compile-- HelloWorld.class -- runtime -- 실행결과 
+
+**1일차 주요 복습 Keyword**
+JDK(Java Development Kit)
+JVM(Java Virtual Machine)
+Compile : Machine Language Code 생성(.class)
+Runtime : Program Execute(.class가 실행)
+                  
+**editplus 환경설정**
+http://www.editplus.co.kr 접속 다운로드 후 
+설치하고 도구 -> 사용자 도구 구성 -> group1에서 
+메뉴제목 : javac
+명령 : c://program files//java//jdk1.8.x//bin//javac.exe를 선택
+인수 : 파일이름 선택
+디렉토리 : 파일 디렉토리 
+적용 버튼 클릭 후
+메뉴제목 : java
+명령 : c://program files//java//jdk1.8.x//bin//java.exe를 선택
+인수 : 확장자를 뺀 파일이름 선택
+디렉토리 : 파일 디렉토리
+적용 확인 클릭 후 
+보기 탭에서 사용자 도구 모음 클릭
+
+**2일차 목차**
+- Java 특징
+- Object-Oriented 개념
+  Object?
+  Class?
+  Object, Class의 관계
+  Object-Oriented?
+- Java 기본 문법(Class, Variable, Method)
+
+2. DB, JDBC(1 week - 분산해서 공부)
+
+3. Web(1 month) 
+    - HTML / CSS / Javascript
+
+4. Web
+    - Servlet / JSP
+    - Model2(Design Pattern)
+
+5. Ajax, jQuery(1 week)
+
+-- Semi Project --
+
+6. Framework(1 month)
+    - Spring IOC(DI), AOP
+    - SpringMVC
+    - Mybatis Framework
+    - Tiles Framework
+    - Spring Security
+
+7. Analysis Design(분산해서 공부)
+    - Essence(개발 방법론의 표준)
+    - UML
+    - DB Modeling(ERD)
+
+8. Final Project(1 month)
+
+Reference
+blog.daum.net/tico99
+Chrome Browser 다운로드
+
+JDK(Java Development Kit) 다운로드
+www.oracle.com 또는 java.sun.com으로 가서 다운로드후 설치
+
+Version Java SE Development Kit 8u111으로 집에 가서 변경
+JDK 환경 설정
+C:\Program Files\Java\jdk1.8.0_111\bin
+
+Keyword
+JDK(Java Development Kit)
+
+
+자기 소개 구성 요건
+이름
+나이
+경력
+인상적인 경험
+취미
+특기
+--PPT 환영--
+
+

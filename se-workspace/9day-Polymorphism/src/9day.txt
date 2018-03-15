@@ -1,0 +1,224 @@
+**9일차 주요 목차**
+- Review
+
+- Object Casting
+  객체 형변환
+
+- instanceof 연산자
+  참조변수가 참조하고 있는 인스턴스의 실제 타입을 알아보기 위해 사용
+  참조변수 instanceof 타입(클래스명)
+  
+- java.lang.Object class
+  Java API의 모든 Class와 사용자가 정의한 모든 Class의 최상위 Class
+  모든 Java Class들은 Object Class로부터 상속받음
+
+- 실습 예제
+--> 복습 : Inheritance
+             super
+             Overloading, Overriding
+             Polymorphism
+             step9 코드 분석
+             step10, 11 코드 분석
+             
+ ----------------------------------------------------------------------
+ 
+Java 소개, 특징
+- Platform Independent : "Write Once, Run Anywhere"
+- JVM(Java Virtual Machine)이 통역자 역할을 담당, 실행 주체
+- Object - Oriented Language
+  JDK(Java Development Kit) > JRE(Java Runtime Environment) > JVM(Java Virtual Machine)
+  
+Object-Oriented
+- Object
+  System의 기본 단위, 속성, 기능으로 구성
+  속성 : Variable, Attribute, Field
+  기능 : Method, Operation
+  ex) 자동차 객체의 속성 : 엔진, 바퀴, ...
+       자동차 객체의 기능 : 출발하다, 가속하다, 멈추다, ...
+- Class
+  Object 생성을 위한 틀 or 설계도
+- Object, Class의 관계
+  Class는 설계도이며 Object는 설계도로부터 생성되는 건물, 다대일 관ㄱ{{
+  ex) 붕어빵 - 붕어빵 틀, 건물 - 설계도
+- Object-Oriented
+  System Analysis Design 기법 중 하나
+  Object를 기본 단위로 상정하고 Object간의 관계를 중심으로 System을 Analysis Design하는 것
+  
+Java의 Data Type - Primitive Data Type, Reference Data Type
+- Primitive Data Type
+  int age = 18; --> int가 Data Type
+  byte단위		1byte		2byte		4byte		8byte
+  정수형			byte		short		int			long
+  실수형									float		double
+  문자형						char
+  논리형			boolean
+  참고) 정수형의 기본형은 int, 실수형의 기본형은 double
+- Reference Data Type
+  Primitive Data Type을 제외한 모든 Data Type
+  일반적으로 클래스명(or 인터페이스)과 동일
+  ex1) Person p;
+  	    참조형타입 참조변수
+  ex2) Person p = new Person();
+  		위 문장을 풀어서 설명하면 
+  		Person 참조형 데이터 타입의
+  		p 변수 공간에 Person 객체 생성 후
+  		참조값(or 주소값)을 참조변수에 할당
+  
+Access Modifier - public > protected > default > private
+public : 어디서나 접근 가능
+protected : 상속 관계일때는 어디서나 접근 가능
+               상속 관계가 아니면 같은 Package내에서만 접근 가능
+[default] : 같은 Package내에서만 접근 가능
+private : 자신의 Class내에서만 접근 가능
+
+Constructor의 역할
+Object 생성시 호출되어 실행되는 Class의 구성 요소
+ex) new Person() ---call---> class Person{
+									 	Person(){ }
+									 }
+특징 : Class에서 Constructor를 명시하지 않으면,
+		Compile시에 Compiler가 Default Constructor를 삽입
+		Constructor는 클래스명과 동일
+		Method와는 다르게 리턴타입이 없다.
+생성자를 명시하는 이유?
+객체 초기화 작업
+다시 말하면 객체 생성 시점에 필요한 작업을 명시
+ex) 신용 카드 발급 전에 신용 정보 받아서 확인
+
+Overloading vs Overriding
+- Overloading
+  다양한 Parameter를 정의
+  같은 이름의 Method(or Constructor)가 다양한 Parameter를 정의하므로 사용자 편의성을 높인다.
+- Overriding(Method Overriding)
+  상속받은 부모 메서드를 자신에 맞게 재정의(or 수정)
+  --> 리턴타입 메서드명 매개변수 동일
+  접근제어자는 접근범위가 더 좁아지면 안됨
+  부모 메서드에서 명시하지 않은 Exception을 throws할 수 없다.
+
+Encapsulation 정의와 장점
+"public interface, private implementation"
+인터페이스와 구현부를 분리하여 설계한다.
+인터페이스는 공개하고 구현부는 감춘다.
+Encapsulation 효과
+유지보수성 향상(구현부가 변경되어되 외부에는 영향이 없다.)
+Information Hiding or Information Security
+생산성 향상(인터페이스만 알면 구현부를 몰라도 사용할 수 있다.)
+Encapsulation 적용
+Object 단위에서의 적용은 외부와 소통할 인터페이스 영역은 public 접근제어자로 공개하고,
+내부에서만 사용될 구현부 영역은 private 접근제어자로 감춘다.
+
+Inheritance 정의와 특성
+자식이 부모의 멤버(변수, 메서드)를 물려받는 것을 말함
+is a relationship
+ex) 사람은 동물이다.
+	 매니저는 직원이다.
+	   자식(Sub)        부모(Super)
+class Person extends Animal{ }
+상속 관계에 있더라도 Encapsulation이 적용된 멤버(변수, 메서드)는 접근에 제약이 있다.
+만약 부모의 멤버 변수(Instance Variable)가 private 접근제어자로 선언되어 있다면 아무리 자식이라도 접근 불가
+접근은 setter/getter를 이용
+
+this, super Keyword
+- this
+  현재 Object(Instance)를 가르키는 Java Keyword
+  ex) private String name;   // Instance Variable
+       public void setName(String name)   // Local Variable or Parameter
+       {
+       		// this를 이용해 Instance Variable을 가르킨다.
+       		this.name = name;
+       }
+- super
+  상속 관계가 형성되고
+  자식 Object가 생성 시작 시점에 부모 Object 먼저 생성되고
+  마지막에 자식 객체가 생성된다.
+  모든 Constructor에는 첫 Line에 super()가 명시되고
+  만약 명시되어 있지 않으면 Compile시에 자동 삽입
+  super()는 부모 생성자를 호출하여 Object 생성
+  ex) class GrandParent{ }
+       class Parent exteds GrandParent{ }
+       class Child extends Parent{ }
+       
+       new Child(); 실행하면
+       GrandParent -> Parent -> Child 순으로 생성
+  Java는 Single Inheritance를 채택한다.
+  Multiple Inheritance의 장점은 Interface로 보완한다.
+
+Polymorphism
+"One Interface, Multiple Implements"
+하나의 메세지 방식으로 다양한 객체들이 각자의 방식으로 동작하는 성질
+--> 메세지 방식 하나만 이해하면 다양한 구현체들을 실행시킬 수 있다.
+     --> 재생(플레이) 버튼을 활용하면
+          곰플레이어, 알송플레이어, 이클립스, CDPlayer, LPPlayer 등과 같은
+          다양한 플레이어들을 실행할 수 있다.
+Animal a = new Person();
+자식 Person 객체는 부모 Animal 타입의 변수로 참조될 수 있다.
+new Person() -----> public void receive(Animal a){ }
+new Dog()	  -----> public void receive(Dog d){ }
+new Tiger()   -----> public void receive(Tiger t){ }
+new Pig       -----> public void receive(Pig p){ }
+---다형성이 적용되므로 아래처럼 하나의 메서드에서 모두 처리 가능---
+new Person() -----> public void receive(Animal a){ }
+new Dog()
+new Tiger()
+new Pig()
+
+Object Casting(Object Down Casting)
+객체 형변환
+
+instanceof 연산자
+참조변수가 참조하고 있는 인스턴스의 실제 타입을 알아보기 위해 사용
+참조변수 instanceof 타입(클래스명)
+
+java.lang.Object
+Java API의 모든 Class와 사용자가 정의한 모든 Class의 최상위 Class
+모든 Java Class들은 Object Class로부터 상속받음
+
+java.lang.Object의 toString() Overriding
+class A
+{
+	public String toString()
+	{
+		return "아침입니다.";
+	}
+}
+
+class TestObject
+{
+	public static void main(String[] args)
+	{
+		Object[] obj = {new A(), new Object()};
+		for(int i = 0; i < obj.length; i++)
+		{
+			System.out.println(obj[i]);
+		}
+		System.out.println("--------------------");
+		for(int i = 0; i < obj.length; i++)
+		{
+			System.out.println(obj[i].toString());
+		}
+	}	 
+}
+
+아침입니다.
+java.lang.Object@15db9742
+--------------------
+아침입니다.
+java.lang.Object@15db9742
+
+ public void println(Object x) 
+ {
+        String s = String.valueOf(x);
+        synchronized (this) 
+        {
+            print(s);
+            newLine();
+       	}
+}
+
+public static String valueOf(Object obj) 
+{
+	return (obj == null) ? "null" : obj.toString();
+}
+
+
+ 

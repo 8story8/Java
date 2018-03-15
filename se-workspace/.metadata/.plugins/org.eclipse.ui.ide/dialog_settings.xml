@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="CleanDialogSettings">
+		<item value="500" key="DIALOG_WIDTH"/>
+		<item value="false" key="TOGGLE_SELECTED"/>
+		<item value="378" key="DIALOG_HEIGHT"/>
+		<item value="710" key="DIALOG_X_ORIGIN"/>
+		<item value="268" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\Moon\Desktop\20day-Thread.zip"/>
+			<item value="C:\Users\Moon\Desktop\22day-GUI.zip"/>
+			<item value="C:\Users\Moon\Desktop\22day-Network.zip"/>
+			<item value="C:\Users\Moon\Desktop\21day-Network.zip"/>
+			<item value="C:\Users\Moon\Desktop\19day-schoolproject-IO-Serializable.zip"/>
+			<item value="C:\Users\Moon\Desktop\19day-IO-Serializable.zip"/>
+			<item value="C:\Users\Moon\Desktop\18day-IO.zip"/>
+			<item value="C:\Users\Moon\Desktop\16day-schoolproject-exception.zip"/>
+			<item value="C:\Users\Moon\Desktop\17day-IO-File.zip"/>
+			<item value="C:\Users\Moon\Desktop\16day-exception-review.zip"/>
+			<item value="C:\Users\Moon\Desktop\15day-Exception.zip"/>
+			<item value="C:\Users\Moon\Desktop\14day-schoolproject-map.zip"/>
+			<item value="C:\Users\Moon\Desktop\14day-Map.zip"/>
+			<item value="C:\Users\Moon\Desktop\13day-schoolproject-list-inst.zip"/>
+			<item value="C:\Users\Moon\Desktop\13day-schoolproject-list.zip"/>
+			<item value="C:\Users\Moon\Desktop\13day-collection.zip"/>
+			<item value="C:\Users\Moon\Desktop\12day-interface.zip"/>
+			<item value="C:\Users\Moon\Downloads\11day-schoolproject-array2-inst.zip"/>
+			<item value="C:\Users\Moon\Desktop\11day-static-abstract-interface.zip"/>
+			<item value="C:\Users\Moon\Desktop\10day-schoolproject-array.zip"/>
+		</list>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jdt.ui.wizards.JavaProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="373" key="DIALOG_X_ORIGIN"/>
+		<item value="197" key="DIALOG_Y_ORIGIN"/>
+	</section>
+</section>

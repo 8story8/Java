@@ -1,0 +1,112 @@
+**3day 주요 목차**
+
+- Method
+  Passing Argument(Data 전달, Pass-By-Value)
+  // 메서드 호출시 데이터 전달			실행 시점에 Parameter로 Data를 받는다
+  참조변수.메서드(data) ----------> 메서드(parameter){}
+  Return Value(값 반환)
+  Method 호출되어 실행 후 호출한 곳으로 결과를 반환할 때 사용하는 키워드
+  Method 실행 마지막 부분에 위치해야 한다.
+  Method 선언부에는 void 대신 반환할 리턴값의 Data Type이 선언되어야 한다.
+  p.getNickName() ---call---> public String getNickName(){
+                                       		return 리턴값
+                                       }
+                     <---return---
+  Method 기본 문법
+  [Access Modifier] 리턴타입(없으면 void) 메서드명([매개변수])
+  {
+  	메서드 실행 내용
+  	[return 값]
+  }
+  
+- Object-Oriented 개념 중 Encapsulation
+ "public interface, private implementation"
+인터페이스와 구현부를 분리하여 설계한다.
+인터페이스는 공개하고 구현부는 감춘다.
+Encapsulation 효과
+유지보수성 향상(구현부가 변경되어도 외부에는 영향이 없다.)
+Information Hiding or Information Security
+인터페이스만 알면 구현부를 몰라도 사용할 수 있다.(생산성 향상에 기여)
+Encapsulation 적용
+- Object 단위에서의 적용은 외부와 소통할 인터페이스 영역은 public 접근제어자로 공개하고
+  내부에서만 사용될 구현부 영역은 private 접근제어자로 감춘다.
+
+**Access Modifier**
+public > protected > [default] > private
+public : 어디서나 접근 가능
+protected : 상속 관계일때는 어디서나 접근 가능
+               상속 관계가 아니면 같은 Package내에서만 접근 가능
+[default] : 같은 Package내에서만 접근 가능 
+private : 자신의 Class내에서만 접근 가능
+
+**setter/getter Method**
+정보를 할당할 때 사용하는 setter와
+정보를 반환받을 때 사용하는 getter로 구성
+ex) public void setName(String n){
+		name = n;
+     }
+     
+     public String getName(){
+		return name;
+     }
+
+**Eclipse 단축키**
+sysout후 Ctrl + Space
+main후 Ctrl + Space
+영역 지정 후 Ctrl + Shift + /하면 주석 지정
+영역 지정후 Ctrl + Shift + \하면 주석 해제
+영역 지정 후 Ctrl + Shift + F하면 Code 정렬
+Ctrl + F11 : 실행
+
+----------------------------------------------------------------------
+
+Review
+-> Java 특징 : Platform Independent(JVM)
+                   Object-Oriented Language
+                   Garbage Collection(JVM이 메모리 관리)
+                   Multi-Threading
+    Java는 Compile과 Runtime(실행) 과정이 있다.
+    Compiler로 Compile을 하면 .class이 생성
+    .class는 JVM이 보기 위한 Bytecode(기계어)로 구성
+    
+    Runtime(실행)은 Main Method로부터 시작
+    
+-> Object-Oriented 개념
+    - Object : System의 기본 단위, 속성과 기능으로 구성
+    - Class : 객체 생성을 위한 틀
+    - Class는 붕어빵 틀, Object는 붕어빵
+    - Class는 Object의 설계도
+    - Object-Oriented는 System을 Analysis Design하기 위한 기법
+      Object를 기본 단위로 상정하고
+      Object간의 관계를 중심으로 System을 Analysis Design하는 것
+    - High Cohesion, Low Coupling
+      Cohesion : Object 내부의 기능적인 집중 정도
+      Coupling : Object간의 상호 의존 정도
+      
+    - Object 구성 요소
+      속성 : Variable, Attribute
+      기능 : Method, Operation
+      
+-> Java 기본 문법
+    package step1;   // Class를 디렉토리별로 분류
+    
+    // Class 선언
+    public class Person{
+        // Variable 선언 : String 문자열 타입, name 변수명
+    	String name;
+    	// Method 정의
+    	public void eat(){   // void : Return 값이 없을 때
+    		// 기능 정의
+    	}
+    }
+    
+ **4일차 주요 목차**
+   - this 키워드
+   - Review
+   - Constructor
+   - Java Data Type
+     1) Primitive Data Type : 정수형, 실수형, 문자형, 논리형
+     2) Reference Data Type
+   - 조건문
+   - 반복문
+  

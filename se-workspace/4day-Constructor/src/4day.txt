@@ -1,0 +1,69 @@
+**4일차 주요 목차**
+   - this 키워드
+     현재 Object(Instance)를 가르키는 Java Keyword
+     ex) private String name;   // Instance Variable
+          public void setName(String name)   // Local Variable or Parameter
+          {
+                // this를 이용해 Instance Variable을 가르킨다.
+          		this.name = name;
+          }
+     
+   - Review
+     setter/getter Method 구현
+   
+   - Constructor
+     Object 생성시 호출되어 실행되는 Class의 구성 요소
+     ex) new Person() ---call---> class Person{
+                                                 Person(){}
+                                           }
+     특징 : Class에서 Constructor를 명시하지 않으면,
+             Compile시에 Compiler가 Default Constructor를 삽입
+             Constructor는 클래스명과 동일
+             Method와는 다르게 리턴타입이 없다.
+      생성자를 명시하는 이유?
+      객체 초기화 작업
+      다시 말하면 객체 생성 시점에 필요한 작업을 명시
+      ex) 신용 카드 발급 전에 신용 정보 받아서 확인
+      
+   - import
+     다른 Package의 자원(Class or Interface, ...)을 사용하기 위해 선언
+     ex) import step5.MemberVO;
+          import java.util.ArrayList;
+     단축키 : Ctrl + Shift + O
+            
+ **Class 구성 요소**
+ package
+ import
+ class
+ 	instance valuable
+ 	constructor
+ 	method
+ 	
+   - Java Data Type
+     1) Primitive Data Type
+     int age = 18; --> int가 Data Type
+     byte단위		1byte			2byte			4byte			8byte
+     정수형			byte			short			int				long
+     실수형   										float			double
+     문자형							char
+     논리형      	 	boolean
+     참고) 정수형의 기본형은 int, 실수형의 기본형은 double
+     2) Reference Data Type
+     Reference Data Type은
+     Primitive Data Type을 제외한 모든 Data Type을 말한다.
+     일반적으로 클래스명(or 인터페이스)과 동일
+     ex1) Person p;
+           참조형타입 참조변수
+     ex2) Person p = new Person();
+            위 문장을 풀어서 설명하면
+            Person 참조형 데이터 타입의
+            p 변수 공간에 Person 객체 생성 후
+            참조값(or 주소값)을 참조변수에 할당
+            
+**5일차 주요 목차**
+- 연산자
+- 제어문
+  1) 조건문
+  2) 반복문
+- 변수 범위(Instance Variable, Local Variable Scope)
+     

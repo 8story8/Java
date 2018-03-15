@@ -1,0 +1,87 @@
+**17일차 주요 목차**
+- Review
+  Java 특징 : Platform Independent, Object-Oriented Language, Garbage Collection, Multi-Threading 등
+  
+  Java 개발 환경 : JDK > JRE > JVM
+  
+  Object-Oriented 개념 : Object를 기본 단위로 하여 Object간의 관계를 중심으로 시스템을 분석 설계하는 기법
+  Object : Attribute, Method로 구성, 시스템의 기본 단위
+  Class : Object 생성을 위한 틀(or 설계도)
+  
+  Object-Oriented 주요 개념 
+  Encapsulation
+  인터페이스는 공개하고 구현부는 감춘다.
+  Inheritance
+  부모 멤버를 물려받고 계층 구조를 형성
+  Polymorphism
+  하나의 메세지 방식으로 다양한 객체들이 각자의 방식으로 동작하는 성질
+  
+  Java Data Type : Primitive Data Type, Reference Data Type
+                         -> Wrapper Class
+                             Primitive Data Type의 데이터 --> Reference Data Type으로 포장
+                             ex) Integer, Double 등
+                         -> Auto Boxing
+                             Primitive Data Type의 데이터가 Reference Daya Type으로 자동 변환되는 것
+                             ex) Object obj = 1;
+                             	  System.in.println(obj.getClass()); --> Integer(Wrapper Class) 타입으로 자동 변환
+
+  Variable
+  Instance Variable -> Heap, 객체 생성시 초기화, 객체 속성 저장
+  Local Variable -> Stack, Method 또는 Constructor에서 일시적으로 사용
+  Class(Static) Variable -> Method Area
+  
+  제어문
+  - 조건문 : if, else if, else, switch
+  - 반복문 : for, while, do~while
+  
+  Overriding vs Overloading
+  Overriding : 부모 Method를 재정의
+  Overloading : 다양한 Parameter 정의
+  
+  this vs super
+  this : 현재 실행중인 자신을 참조
+  super : 부모를 참조
+  
+  instanceof : Object 타입을 비교하는 연산자, is a 관계(계층 구조)가 성립되면 true
+  
+  Objcet Down Casting
+  부모 타입으로 자식 객체가 참조될 경우
+  상속받는 멤버와 Overriding한 Method는 사용될 수 있으나,
+  자식의 독자적 멤버는 사용될 수 없으므로 Object Casting 절차를 통해 형변환 후 사용할 수 있다.
+  
+  static
+  Object 생성없이 클래스 이름으로 사용 가능
+  Class Loading시에 한번 Method Area에 데이터 적재
+  
+  abstract
+  Abstract Class, Method 선언시 사용
+  직접 Object 생성 불가
+  Abstract Method를 선언하면 하위 Class는 자신이 Abstracr Class가 되지 않은 상태에서는
+  반드시 Abstract Method를 구현해야 한다.
+  
+  Interface
+  --> 다중 상속(다양한 계층 구조)을 통한 다형성 적용
+       --> Java는 단일 상속, Interface를 통해 다양한 계층 구조를 형성하여 다형성을 적용하는 데 목적이 있다.
+            --> 표준화
+                  --> ex) Player의 재생 버튼
+                  
+  final : 상수, Overriding 방지, Inheritance 방지
+  
+  Collection 계열 : 자료 구조
+  Set : 중복 방지
+  List : 순번으로 관리
+  Map : key, value
+  Stack : LIFO(Last In First Out)
+  Queue : FIFO(First In First Out)
+  
+  Exception Handling
+  예외 상황이 발생할 경우 대처 방안을 실행하고 프로그램을 정상적으로 동작시키는 데 목적이 있다.
+  try : 예외 발생 예상 지점을 블럭화
+  catch : 예외 발생시 대안을 실행
+  finally : 예외 유무와 상관없이 실행
+  throws : 예외 발생시 호출한 곳으로 예외를 던지겠다는 의미
+  throw : 예외를 고의로 발생시키겠다는 의미
+  
+- IO
+
+- File

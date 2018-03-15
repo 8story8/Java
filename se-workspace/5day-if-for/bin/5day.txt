@@ -1,0 +1,49 @@
+**5일차 주요 목차**
+- 연산자
+- 제어문
+  1) 조건문
+      - if, else if, else
+        if(boolean_expression)
+        {
+        
+        }
+        else if(boolean_expression)
+        {
+        }
+        else
+        {
+        }
+      - switch
+        ex) int grade = 1;
+             switch(grade)
+             {
+             	case 1 : 실행구문;
+             		break;   // switch문을 벗어난다.
+             	case 2 : 실행구문;
+             	default : 실행구문;
+             }      
+  2) 반복문
+  for, while, do ~ while
+  - for
+    for(초기화; 조건검사; 증감)
+    {
+    	실행내용
+    }
+  - while
+  	초기화
+    	while(조건검사)
+    	{
+    		실행내용
+    		증감
+    	}
+  - do ~ while : 조건에 맞지 않더라도 한번은 수행
+    do{
+    	실행내용
+    }while(조건검사);
+
+**6일차 주요 목차**
+  - 변수 범위(Instance Variable, Local Variable Scope)
+  - Object 초기화 과정
+  - has a relationship
+    사람이 스마트폰을 소유하다
+  - Array

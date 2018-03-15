@@ -1,0 +1,20 @@
+**18일차 주요 목차**
+IO : Input, Output
+
+Stream : 데이터의 연속적인 흐름
+            줄기
+            IO를 위한 Class들을 통칭
+            (InputStream, OutputStream)
+            
+Java IO의 4가지 주요 추상 클래스 
+			1byte					2byte
+입력		InputStream			Reader
+출력		OutputStream		Writer
+
+Node Stream(기본 스트림) 계열 : 직접 장치에 연결되는 Stream, 필수
+Processing Stream(부가 스트림) 계열 : 다른 Stream에 연결되어 기능을 제공하기 위한 Stream, 선택
+
+flush() : Buffer에 임시 저장된 데이터를 배출한다.
+close() : Stream을 닫아준다.(연관된 자원을 해제한다.)
+           닫기 전 flush()를 실행한다.
+

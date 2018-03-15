@@ -1,0 +1,57 @@
+**6일차 주요 목차**
+  - 변수 범위(Instance Variable, Local Variable Scope)
+    Java Variable 종류는 Instance Variable, Local Variable, Class Variable(static)
+    Java Memory Structure는
+    Method(or Class) Area, Stack, Heap Area로 구성
+    Method Area : Class의 메타 정보(Method 정보, Static 정보 등)
+    Stack : Local Variable의 정보 저장
+    Heap : Instance Variable(Object의 Member Variable)의 정보가 저장
+      - Local Variable
+        Method or Constructor 단위에서 선언된 변수
+        Stack(LIFO) 메모리 영역에 저장
+        임시로 Method나 Constructor내에서 일시적으로 사용
+        명시적 초기화가 필요
+        (ex) int i = 0;)
+        제어문 내에서 선언될 경우 자신의 { } 실행 영역에서만 사용 가능
+        선언된 실행 영역의 수행이 마치면 Stack 메모리에서 해제
+      - Instance Variable(or Object Member Variable)
+        Object의 속성 정보를 저장
+        Heap 영역에 저장
+        선언만 해도 기본 초기화(지역 변수는 명시적 초기화가 필요)
+        (ex) String name; --> null로 초기화, int age; --> 0으로 초기화, boolean flag; --> false로 초기화)
+  - Object 초기화 과정
+    1) Instance Variable의 기본 초기화
+       ex) 참조형은 null, 정수형은 0, boolean형은 false
+    2) Instance Variable의 명시적 초기화
+       ex) private int age = 1;
+    3) Constructor에 의한 초기화
+    
+  - has a relationship
+    사람이 스마트폰을 소유하다.
+    UML(Unified Modeling Language)
+    OOAD(Object Oriented Analysis Design)시 사용하는 모델링 언어(or 표기법)
+    ex) Class Diagram, UseCase Diagram, Sequence Diagram, ...
+    Class Diagram 관계
+    association 연관 관계 use a
+    aggregation 집합 관계 has a
+    composition 긴밀한 집합 관계 consist of
+    
+  - Array : 다수의 데이터를 효과적으로 관리하기 위해 사용
+    1) Primitive Data Type을 저장하는 배열
+       배열 선언 int ages[]; or int[] ages;
+       배열 생성 ages = new int[3];   // 방길이 3개짜리 배열 생성
+       배열 요소에 정보 할당 ages[0] = 22;
+                                   ages[1] = 33;
+                                   ages[2] = 11;
+       System.out.println(ages[2]);   // 11 출력
+       System.out.println(ages.length);   // 3 출력
+       
+**7일차 주요 목차**
+ - Reference Data Type을 저장하는 배열
+ 
+ **8일차 주요 목차**
+ Overloading
+ Inheritance
+ super Keyword
+ Overriding
+ Polymorphism
