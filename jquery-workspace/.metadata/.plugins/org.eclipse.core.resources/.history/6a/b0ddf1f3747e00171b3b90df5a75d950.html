@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>JSONP Test With jQuery</title>
+	<style>
+		div{margin-bottom:10px; padding:2px;}
+		#getjson{border:1px solid red; display:none;}
+		#ajax{border:1px solid blue; display:none;}
+	</style>
+	<script src="//code.jquery.com/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$("#testBtn").click(function(){
+				$.getJSON("http://127.0.0.1:8888/jquery-study6-jsonp/server.jsp?callback=?", function(d){
+					$.each(d, function(k, v){
+						$("#getjson").append("<div>" + k + " : " + v + "</div>");
+					});
+					$("#getjson").show();
+				});
+							
+				$.ajax({
+					url : "http://127.0.0.1:8888/jquery-study6-jsonp/server.jsp",
+					dataType : "jsonp",
+					jsonp : "callback",
+					success : function(d){
+						$.each(d, function(k, v){
+							$("#ajax").append("<div>" + k + " : " + v + "</div>");
+						});
+						$("#ajax").show();
+					}
+				});
+				
+				$.ajax({
+					url : "http://127.0.0.1:8888/jquery-study6-jsonp/server.jsp",
+					success : function(result){
+							$("#error").append("<div>"+ "성공!" + "</div>");
+							$("#error").show();
+					},
+					error : function(error){
+						$("#error").append("<div>"+ "Error : " + error +  "</div>");
+						$("#error").show();
+					}
+				});
+			});
+		});
+	</script>
+</head>
+<body>
+	<button id="testBtn">Test!</button>
+	<div id="error"></div>
+	<div id="getjson"></div>
+	<div id="ajax"></div>
+</body>
+</html>

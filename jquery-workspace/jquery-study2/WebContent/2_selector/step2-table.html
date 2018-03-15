@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>bootstrap jquery table</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#testBtn").click(function(){
+			// alert($(this).val());
+			
+			// index는 0부터 시작된다.
+			// $("#test tr:eq(0)").css("background", "yellow");
+			
+			// alert($("#test tr:eq(1)").text());
+			// alert($("#test tr:eq(1)").html());
+			// $("#test td:eq(5)").css("background", "yellow");
+			
+			// 특정 데이터가 포함되는 요소를 선택
+			// $("#test td:contains(r)").css("background", "lime");
+			alert($("#test td:contains(r)").text());
+		}); // testBtn
+		
+		// test id table의 td를 클릭했을 때 자신의 문자열이 출력
+		$("#test td").click(function(){
+			alert($(this).text());
+		});
+	});
+</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-2">left</div>
+			<div class="col-sm-8" style="background:pink">
+			<input type = "button" value = "테스트"  class = "btn btn-info" id = "testBtn">
+			<table id="test" class="table table-hover">
+				<thead>
+					<tr>
+						<th>아이디</th>
+						<th>이름</th>
+						<th>주소</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>java</td>
+						<td>아이유</td>
+						<td>판교</td>
+					</tr>
+					<tr>
+						<td>spring</td>
+						<td>장기하</td>
+						<td>강남</td>
+					</tr>
+					<tr>
+						<td>jquery</td>
+						<td>조인성</td>
+						<td>마포</td>
+					</tr>
+				</tbody>
+			</table>
+			</div> <!-- col -->
+			<div class="col-sm-2">right</div>
+		</div> <!-- row -->
+	</div> <!-- container -->
+	<hr>
+	<div class = "row">
+		<!-- offset-2 : 2비중만큼 오른쪽으로 이동 -->
+		<div class = "col-sm-8 col-sm-offset-2">
+			<table id="test2" class="table table-hover">
+				<thead>
+					<tr>
+						<th>아이디</th>
+						<th>이름</th>
+						<th>주소</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>java</td>
+						<td>아이유</td>
+						<td>판교</td>
+					</tr>
+					<tr>
+						<td>spring</td>
+						<td>장기하</td>
+						<td>강남</td>
+					</tr>
+					<tr>
+						<td>jquery</td>
+						<td>조인성</td>
+						<td>마포</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jquery basic4</title>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("a").click(function(){
+			// false를 return하면 이동되지 않는다.
+			return confirm($(this).text() +"로 이동하시겠습니까?");
+		});
+	});
+</script>
+</head>
+<body>
+	<a href = "http://www.daum.net">Daum</a><br><br>
+	<a href = "http://www.naver.com">Naver</a><br><br>
+	<a href = "http://www.google.com">Google</a>
+</body>
+</html>

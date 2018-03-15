@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/javascript; charset=UTF-8" pageEncoding="UTF-8"%>
+ 
+<%@ page import="java.io.StringWriter"%>
+<%@ page import="java.util.HashMap"%>
+<%@ page import="java.util.Map"%>
+ 
+<%@ page import="org.codehaus.jackson.map.ObjectMapper"%>
+ 
+<%
+    Map<String, String> dummyData = new HashMap<String, String>();
+    dummyData.put("value1", "값1");
+    dummyData.put("value2", "값2");
+    dummyData.put("value3", "값3");
+    dummyData.put("value4", "값4");
+     
+    StringWriter sw = new StringWriter();
+     
+    // Jackson JSON Mapper 를 사용해서 Map 을 JSON 문자열로 변환
+    ObjectMapper mapper = new ObjectMapper();
+    mapper.writeValue(sw, dummyData);
+     
+    request.setAttribute("sw", sw);
+%>
+ 
+${param.callback}(${sw});

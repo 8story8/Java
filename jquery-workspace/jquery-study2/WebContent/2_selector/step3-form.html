@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#tf").submit(function(){
+			// alert("form select");
+			
+			// userId id 개체의 value를 출력
+			// alert($("#userId").val());
+			
+			// userId id 개체의 value를 할당
+			// $("#userId").val("할당");
+			
+			// radio 버튼 수
+			// alert($("#tf :radio").length);
+			
+			// radio 버튼 중 name이 gender인 radio 버튼 수
+			// alert($("#tf :radio[name=gender]").length);
+			
+			// radio 버튼 중 name이 gender인 radio 버튼 중 선택된 요소 수
+			// alert($("#tf :radio[name=gender]:checked").length);
+			
+			// radio 버튼 중 name이 gender인 radio 버튼 중 선택된 요소 value
+			// alert($("#tf :radio[name=gender]:checked").val());
+			
+			// textarea의 name이 ta인 입력된 값을 출력
+			// alert($(":textarea[name=ta]").val());
+			
+			// textarea ta name인 영역에 입력한 값을 div contentView id 영역에 출력하고
+			// ta textarea 영역의 값은 지워진다.
+			$("#contentView").text($("#tf textarea[name=ta]").val());
+			$("#tf textarea[name=ta]").val("").focus();
+			return false;
+		});
+	});
+</script>
+</head>
+<body>
+<!-- tf 아이디의 form 이 submit 될 때 alert("form select") 출력 후 전송을 막는다 -->
+ <form id="tf" action="a.jsp">
+     <input type="text" id="userId" name="userId"><br>
+  <input type="radio" name="gender" value="남자">남<br> 
+  <input  type="radio" name="gender" value="여자">여<br> 
+  <input  type="radio" name="hobby" value="독서">독서<br> 
+  <input  type="hidden" name="mode" value="find">
+  <textarea rows="5" cols="20" name="ta"></textarea><br> 
+  <input type="submit" value="전송">
+ </form>
+ <div id="contentView"></div>
+
+</body>
+</html>

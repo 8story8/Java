@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\Moon\Desktop\temp\jquery-study5-ex.zip"/>
+			<item value="C:\Users\Moon\Desktop\temp\jquery-study4-ajax.zip"/>
+			<item value="C:\Users\Moon\Desktop\temp\jquery-study3.zip"/>
+			<item value="C:\Users\Moon\Desktop\jquery-study2.zip"/>
+			<item value="C:\Users\Moon\Desktop\jquery-study1.zip"/>
+			<item value="C:\Users\Moon\Desktop\bootstrap-study.zip"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>step3</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<style type="text/css">
+	#desc{
+		background-color:yellow;
+	}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#descInfo").hide();
+	
+		$("#desc").click(function(){
+			$("#descInfo").toggle(1000, function(){
+  				var result = $("#descInfo").css("display")=="none";
+  				if(result){
+  					$("#desc").text("Bourbon 정보 더보기");
+  				}
+  				else{
+  					$("#desc").text("접기");
+  				}
+  			});
+		});
+	});
+</script>
+</head>
+<body>
+<span id = desc>Bourbon 정보 더보기</span>
+<p id = "descInfo">
+ 본명 : ???<br>
+ 나이 : 29<br>
+ 소속 : 공안<br>
+ 사는곳 : Tokyo<br>
+ 취미 : 추리
+</p>
+</body>
+</html>

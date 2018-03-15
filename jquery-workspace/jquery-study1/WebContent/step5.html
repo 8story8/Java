@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jquery selector id, class</title>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+	// id가 menu인 요소만을 대상으로 클릭했을 때
+	// 자신의 text가 alert로 출력되게 이벤트 정의한다.
+	$(document).ready(function(){
+		// id로 접근할 때는 #아이디
+		$("#menu").click(function(){
+			alert($(this).text());
+		});
+	});
+	
+	// class org 요소들은 클릭하면 
+	// 자신의 배경색을 yellow로 이벤트를 정의한다.
+	$(document).ready(function(){
+		// class로 접근할 때는  .클래스
+		$(".org").click(function(){
+			$(this).css("background", "yellow");
+		});
+	});
+</script>
+</head>
+<body>
+<p id = "menu">오늘 메뉴</p>
+<hr>
+<p>내일 메뉴</p><br>
+<p class = "org">Bourbon</p><br><br>
+<div class = "org">Jin</div><br><br>
+<span class = "org">Vermouth</span> 
+</body>
+</html>

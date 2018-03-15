@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+	// 현 문서의 모든 버튼에 대해 클릭 이벤트가 발생할 경우
+	// 자신의 value를 alert로 출력하도록 이벤트를 등록한다.
+	$(document).ready(function(){
+		$("#jQueryTest").click(function(){
+			alert($(this).text());
+		});
+	});
+	
+	$(document).ready(function(){
+	/* $("a").click(function(){
+			return confirm($(this).text() + "로 이동하시겠습니까?");
+		}); */
+		// 주소에 Daum이 포함되어 있는 링크만 Select한다.
+		$("a[href*='daum']").click(function(){
+			return confirm($(this).text() + "로 이동하시겠습니까?");
+		});
+	});
+	
+	$(document).ready(function(){
+		$(".friend").click(function(){
+			$(this).fadeOut(3000);
+		});
+	});
+</script>
+</head>
+<body>
+<div id = "jQueryTest">jQuery Selector Practice</div><hr>
+<!-- jQueryTest id 영역을 클릭했을 경우 자신의 text가 alert로 출력 -->
+
+<a href = "http://www.daum.net">Daum</a><br>
+<a href = "http://www.google.com">Google</a><br>
+<a href = "http://www.daum.net">DaumKakao</a><hr>
+<!-- 위 링크들을 누르면 confirm으로 ~로 이동하시겠습니까?
+ 	  확인 누를때만 이동시킨다. 
+ 	  Selector를 수정하여 ~가 url에 포함되어 있는 대상만 위의 이벤트가 동작되게 한다.-->
+ <span class = "friend">1</span>
+ <span>Bourbon</span>
+ <span>Jin</span>
+ <span>Kir</span>
+ <span class = "friend">2</span>
+<!-- class friend들만 클릭시 fadeOut(3000)시킨다. -->
+</body>
+</html>

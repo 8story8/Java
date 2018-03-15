@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jquery</title>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<style type="text/css">
+	.a{
+		background-color:lime;
+	}
+	
+	.b{
+		font-size:20px;
+		font-weight: bolder;
+	}
+</style>
+<script type="text/javascript">
+	// 현 문서의 모든 버튼에 대해 클릭 이벤트가 발생할 경우
+	// 자신의 value를 alert로 출력하도록 이벤트를 등록한다.
+	$(document).ready(function(){
+		$("#testBtn").click(function(){
+			// alert($(this).val());
+			$(".student, .teacher, #nameTxt").css("background", "yellow");
+		});
+	});
+</script>
+</head>
+<body>
+<input type = "button" value = "테스트버튼" id = "testBtn"><br><br>
+<input type = "button" value = "버튼"><hr>
+<!-- id testBtn만을 대상으로 해당 버튼을 클릭하면 자신의 value를 alert로 출력-->
+
+<div class = "student">Bourbon</div>
+<div>Kid</div>
+<div class = "student">Kir</div>
+<span class = "student">Vermouth</span><hr>
+<!--
+	Selector.css("background", "yellow");
+	testBtn 아이디 버튼을 클릭하면 class가 student인 요소의 배경색을 yellow로 변경한다. 
+ -->
+ 
+ <span class = "teacher">전지현</span>
+ <p id = "nameTxt">송중기</p><hr>
+<!-- class teacher와 id nameTxt 대상 요소도 동일하게 배경색 적용 -->
+<p class = "a">aaaaaaaaaa</p>
+<p class = "b">bbbbbbbbbb</p>
+<p class = "a b">ababababab</p>
+</body>
+</html>

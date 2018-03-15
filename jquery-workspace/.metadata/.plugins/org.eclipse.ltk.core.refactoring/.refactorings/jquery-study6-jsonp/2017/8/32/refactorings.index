@@ -1,0 +1,10 @@
+1502437651747	Move 'data.jsp' to 'server'
+1502437947234	Delete element
+1502437953704	Move 'client.html' to 'WebContent'
+1502438050923	Move 'data.jsp' to 'WEB-INF'
+1502438054379	Delete element
+1502438066884	Rename resource 'data.jsp'
+1502438098937	Move 'Server.jsp' to 'WebContent'
+1502438104611	Rename resource 'client.html'
+1502438140867	Rename resource 'Client.html'
+1502438146342	Rename resource 'Server.jsp'

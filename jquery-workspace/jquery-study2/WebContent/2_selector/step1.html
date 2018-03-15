@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>jQuery Selector</title>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		// 현 웹문서 행위에 대한 등록
+		$("#changeUI").click(function(){
+			// alert($(this).val());
+			// div id bookList 내부의 p를 선택
+			$("#bookList>p").css("background", "yellow");
+			
+			// id bookList 요소 다음에 나오는 형제 요소 중 p 선택
+			$("#bookList~p").css("background", "pink");
+			
+			// id bookList 요소 바로 다음에 나오는 형제 요소 p 선택
+			$("#bookList+p").css("background", "lime");
+		});
+	});
+</script>
+</head>
+<body>
+<input type = "button" value = "테스트" id = "changeUI"><hr>
+<div id = "bookList">
+	<p>책목록</p>
+</div>
+<p>Others</p>
+<span>블링크</span>
+<p>신영복</p>
+<span>감옥으로부터의 사색</span>
+<p>바라바시</p>
+<span>링크</span>
+</body>
+</html>

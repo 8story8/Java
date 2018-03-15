@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Insert title here</title>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#jsonObjBtn").click(function(){
+			$.ajax({
+				type:"get",
+				url:"JSONServlet",
+				dataType:"json",
+				data:"command=text&id=java",
+				success:function(jsonData){
+					// alert(jsonData.id);
+					$("#nameView").html(jsonData.name);
+					$("#ageView").html(jsonData.age);
+				}
+			});
+		});
+		
+		$("#jsonArrayBtn").click(function(){
+			$.ajax({
+				type:"post",
+				url:"JSONServlet",
+				dataType:"json",
+				success:function(jsonArrData){
+					for(var i = 0; i < jsonArrData.length; i++){
+						alert(jsonArrData[i]);
+					}
+				}
+			});
+		});
+		
+		$("#getJSONTest").click(function(){
+			$.getJSON("JSONServlet", function(jsonData){
+				$("#nameView").html(jsonData.name);
+				$("#ageView").html(jsonData.age);
+			});
+		});	
+	});
+</script>
+</head>
+<body>
+<input type="button" id="jsonObjBtn" value="JSONObject테스트">
+<hr>
+이름 : <span id="nameView"></span><br>
+나이 : <span id="ageView"></span>
+<hr>
+<input type="button" id="jsonArrayBtn" value="JSONArray테스트">
+<hr>
+<input type="button" id="getJSONTest" value="getJSON테스트">
+<hr>
+
+</body>
+</html>

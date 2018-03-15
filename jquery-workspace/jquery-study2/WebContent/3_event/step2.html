@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>step2</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script type="text/javascript">
+  	$(document).ready(function(){
+  		$("#imgView").hide();
+  		
+  		$("#showBtn").click(function(){
+  	  		$("#imgView").show();
+  	  	});
+  		
+  		$("#stateBtn").click(function(){
+  			// css 속성 display가 none이면 hide
+  			var result = $("#imgView").css("display")=="none";
+  			alert("이미지 상태 확인 hide : " + result);
+  		});
+  		
+  		$("#toggleBtn").click(function(){
+  			$("#imgView").toggle(3000);
+  		});
+  	});
+  </script>
+</head>
+<body>
+<div id = "imgView"><img src = "sky.jpg"></div>
+<input type = "button" id = "showBtn" value = "사진 보기">
+<input type = "button" id = "stateBtn" value = "상태 확인">
+<input type = "button" id = "toggleBtn" value = "토글 테스트">
+<!-- 처음 화면 로드시에는 이미지를 보이지 않게 하고 
+       사진 보기 버튼을 누를때 이미지를 보이게 한다. -->
+</body>
+</html>

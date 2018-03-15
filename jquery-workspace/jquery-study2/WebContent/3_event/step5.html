@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>bootstrap jquery table</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#test2 td").hover(
+			function(){
+				$(this).css("background", "yellow");
+				$("#infoView").text($(this).text());
+			}, 
+			function(){
+				$(this).css("background", "white");
+				$("#infoView").text("");
+			}
+		);
+	});
+</script>
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<!-- offset-2 : 2비중만큼 오른쪽으로 이동 -->
+			<div class="col-sm-8 col-sm-offset-2">
+				<table id="test2" class="table">
+					<thead>
+						<tr>
+							<th>아이디</th>
+							<th>이름</th>
+							<th>주소</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>java</td>
+							<td>아이유</td>
+							<td>판교</td>
+						</tr>
+						<tr>
+							<td>spring</td>
+							<td>장기하</td>
+							<td>강남</td>
+						</tr>
+						<tr>
+							<td>jquery</td>
+							<td>조인성</td>
+							<td>마포</td>
+						</tr>
+					</tbody>
+				</table>
+				<br><br>
+				<div id = "infoView"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
