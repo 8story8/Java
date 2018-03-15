@@ -1,0 +1,19 @@
+﻿크롬 :      Mozilla/5.0 (Windows NT 6.1) AppleWebKit/535.7 (KHTML, like Gecko) Chrome/16.0.912.77 Safari/535.7
+IE :        Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0; MALC)
+fireFox :   Mozilla/5.0 (Windows NT 6.1; rv:8.0.1) Gecko/20100101 Firefox/8.0.1
+에뮬폰 :    Mozilla/5.0 (Linux; U; Android 2.2; ko-kr; sdk Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
+모토로이 :  Mozilla/5.0 (Linux; U; Android 2.2.1; ko-kr; XT720 Build/provision 1.1 offical) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
+갤탭 :	    Mozilla/5.0 (Linux; U; Android 2.3.4; ko-kr; SHW-M180W Build/GINGERBREAD) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1
+iPhone 3G : Mozilla/5.0 (iPhone; U; CPU iPhone OS 2_0 likeMac OS X; ja-jp) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1Mobile/5A345 Safari/525.20
+
+이전iPhone: Mozilla/5.0 (iPhone; U; CPU like Mac OS X; en) AppleWebKit/420+ (KHTML, like Gecko) Version/3.0 Mobile/1C28 Safari/419.3
+
+펌웨어2.0 업그레이드 전의 iPod touch:
+Mozilla/5.0 (iPod; U; CPU like Mac OS X; en) AppleWebKit/420.1 (KHTML, like Gecko) Version/3.0 Mobile/3A100a Safari/419.3
+
+펌웨어 2.0 업그레이드 후의 iPod touch:
+Mozilla/5.0 (iPod; U; CPU iPhone OS 2_0 likeMac OS X; ja-jp) AppleWebKit/525.18.1 (KHTML, like Gecko) Version/3.1.1Mobile/5A347 Safari/525.20
+
+아이패드 :  Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; de-de) AppleWebKit/531.21.10 (KHTML, like Gecko) Version/4.0.4 Mobile/7B367 Safari/531.21.10
+
+

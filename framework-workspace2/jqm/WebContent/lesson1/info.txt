@@ -1,0 +1,4 @@
+**에뮬레이터에서 확인하기**
+window -> customize perspective -> command group availability -> android sdk and avd manager
+
+에뮬레이터 실행 -> 웹브라우저에서 실제 ip 를 입력해서 현 모바일 페이지를 열어본다. 

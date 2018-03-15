@@ -1,0 +1,5 @@
+package org.saiden.springmvc13.controller;
+
+public class TempInterceptor {
+
+}

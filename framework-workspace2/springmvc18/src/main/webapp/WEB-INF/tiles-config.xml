@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+   <!DOCTYPE tiles-definitions PUBLIC 
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="tilesbase.tiles" template="/WEB-INF/views/templates/layout.jsp">
+		<put-attribute name="title" value="" />
+		<put-attribute name="header" value="/WEB-INF/views/templates/header.jsp" />
+		<put-attribute name="left" value="/WEB-INF/views/templates/left.jsp" />
+		<put-attribute name="main" value="/WEB-INF/views/home.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/templates/footer.jsp" />
+	</definition>
+	
+	<!-- <definition name = "home2" extends = "tilesbase">
+		<put-attribute name="main" value="/WEB-INF/views/home2.jsp" />
+	</definition>
+	<definition name = "home3" extends = "tilesbase">
+		<put-attribute name="main" value="/WEB-INF/views/home3.jsp" />
+	</definition> -->
+	
+	<!-- 
+		Controller에서 viewName을 home3으로 반환하면 아래 tiles 정의가 동작한다. 
+		(main은 views/home3.jsp가 실행된다.)
+	-->
+	<definition name = "home*.tiles" extends = "tilesbase.tiles">
+		<put-attribute name="main" value = "/WEB-INF/views/home{1}.jsp"></put-attribute>
+	</definition>
+	
+	<!-- 
+		  */* : {1}/{2}
+	 	  예를 들어 Controller에서 member/register로 응답하면 
+	 	  WEB-INF/views/member/register.jsp가 메인 화면에 include된다.
+	 -->
+	<definition name = "*/*.tiles" extends = "tilesbase.tiles">
+		<put-attribute name="title" value = "{2}"></put-attribute>
+		<put-attribute name="main" value = "/WEB-INF/views/{1}/{2}.jsp"></put-attribute>
+	</definition>
+</tiles-definitions>   

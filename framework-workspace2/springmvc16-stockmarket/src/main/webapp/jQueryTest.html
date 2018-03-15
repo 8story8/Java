@@ -1,0 +1,54 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="/springmvc16-stockmarket-inst/resources/css/broker.css" type="text/css">
+<script src="/springmvc16-stockmarket-inst/resources/js/jquery-1.11.3.min.js"></script>
+<title>주식거래</title>
+<script type="text/javascript">
+	$(document).ready(function(){		
+	$("#tradeBtn").click(function(){				
+			//sharesView table의 첫번째 td 중 매도 주식이 존재하는 지를 확인			
+			alert($("#sharesView tr td:first-child").length);//2
+			alert($("#sharesView tr td:first-child").filter(":contains('현대')").length);//1
+			alert($("#sharesView tr td:first-child").filter(":contains('삼성')").length);//0
+			var targetShares=$("#sharesView tr td:first-child").filter(":contains('현대')");	
+			if(targetShares.length>0){//현대 주식 수량을 확인 
+				alert(parseInt(targetShares.next().text()));
+			}
+	 });//click			
+});//ready
+</script>
+</head>
+<body>  	
+	<input type="button" value="거래하기" id="tradeBtn">
+	<table>
+			<thead>
+			<tr>
+				<td>주식명</td>
+				<td>수량</td>
+				<td>총액</td>
+			</tr>
+			</thead>		
+			<tbody id="sharesView">
+			
+				<tr>
+					<td >현대</td>
+					<td>6</td>
+					<td>3000</td>
+				</tr>
+			
+				<tr>
+					<td >LG</td>
+					<td>1</td>
+					<td>400</td>
+				</tr>
+			
+			</tbody>
+		</table>	
+	
+</body>
+</html>

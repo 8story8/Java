@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-3.1.xsd">
+<mvc:annotation-driven />
+<context:component-scan base-package="org.kosta" />
+<!-- <aop:aspectj-autoproxy></aop:aspectj-autoproxy> -->
+<bean id="viewResolver" 
+class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+<property name="prefix" value="/WEB-INF/views/"></property>
+<property name="suffix" value=".jsp"></property>
+</bean>
+<!-- Handler Interceptor 설정 -->
+<!-- <mvc:interceptors>
+	<mvc:interceptor>
+	<mvc:mapping path="/*.do"/>	
+	<mvc:exclude-mapping path="/login.do"/>
+	<mvc:exclude-mapping path="/list.do"/>
+	<bean class="org.kosta.springmvc15.controller.interceptor.LoginCheckInterceptor"/>
+	</mvc:interceptor>
+</mvc:interceptors> -->
+
+	<!-- Annotation 적용 Package가 여러 개일 경우 ,로 패키지명, 패키지명으로 명시하면 된다.-->
+	<context:component-scan base-package="org.kosta.springmvc15.*"></context:component-scan>
+	
+	<!-- Annotation 기반 AOP 설정 -->
+	<aop:aspectj-autoproxy></aop:aspectj-autoproxy>
+</beans>
+
+
+
+
+
+
+
+
+
+

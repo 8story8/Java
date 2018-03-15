@@ -1,0 +1,50 @@
+<!-- jquery mobile 버튼에 아이콘 추가하기 위해서는 
+      data-icon에 값을 설정해야 한다.
+	 표준 아이콘을 제공한다. 
+	 data-iconpos="top" 과 같은 속성을 setting 하여 위치를 설정한다. 
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery Mobile</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+  href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+</head>
+<body>
+   <section id="page1" data-role="page"> 
+      <header data-role="header">
+         <h1>jQuery Mobile ICON</h1>
+      </header>
+      <div class="content" data-role="content">
+        <a href="#" data-role="button" data-icon="delete">link bar</a>
+        <!-- 버튼에도 아이콘 추가 가능 -->
+        <!-- 아이콘 위치 변경 data-iconpos 위치명시가능 -->
+        <a href="#" data-role="button" data-icon="arrow-r"
+         data-iconpos="right">right position icon button</a>
+         <a href="#" data-role="button" data-icon="arrow-l"
+         data-iconpos="top">top position icon button</a>
+         <!-- data-iconpos="notext" :텍스트 없이 아이콘만 적용 -->
+         <a href="#" data-role="button" data-icon="gear"
+         data-iconpos="notext">이부분은 보이지 않는다 </a>
+      </div>
+      <footer data-role="footer">
+         <h1> KOSTA </h1>
+      </footer>
+   </section> 
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

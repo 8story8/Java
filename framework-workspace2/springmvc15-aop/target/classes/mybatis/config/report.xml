@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- MyBatis에서 namespace는 필수적으로 명시해야 함 -->
+ <mapper namespace="report">  
+ 	<select id = "findReportByKeyword" parameterType = "string" resultType="int">
+ 		select count(*) from report where keyword = #{value}
+ 	</select>
+  
+ 	<select id = "selectReport" resultType="map">
+ 		select r.* from (select RANK() OVER(order by count desc) as rank, keyword, count from report) r where r.rank between 1 and 5
+ 	</select>
+ 	
+ 	<insert id = "insertReport" parameterType="string">
+ 		insert into report values(#{value}, 1)
+ 	</insert>
+ 	
+ 	<update id="updateReport" parameterType = "string">
+ 		update report set count = count+1 where keyword = #{keyword}
+ 	</update>
+ </mapper>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="handlerMapping" 
+class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"></bean>
+<!-- ViewResolver 설정 -->
+<bean id="viewResolver" 
+class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+	<property name="prefix" value="/response/"/>
+	<property name="suffix" value=".jsp"/>
+</bean>
+<bean id="/my.kosta" class="controller.MyController"></bean>
+<bean id="/findMember.kosta" class="controller.FindMemberController">
+	<constructor-arg ref="memberService"/>
+</bean>
+<bean id="memberService" class="model.MemberServiceImpl"></bean>
+</beans>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

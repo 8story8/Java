@@ -1,0 +1,90 @@
+**Spring + Tiles 연동**
+ Tiles : Page Layout을 위한 Framework
+ jsp include로 처리되었던 view layout을 효과적으로 개발하고 유지보수하기 위한 Framework 
+
+**Tiles 적용 단계**
+1. Tiles Dependency 추가 
+<dependency>
+	<groupId>org.apache.tiles</groupId>
+    <artifactId>tiles-jsp</artifactId>
+    <version>3.0.3</version>
+</dependency>
+<dependency>
+	<groupId>org.apache.tiles</groupId>
+    <artifactId>tiles-core</artifactId>
+    <version>3.0.3</version>
+</dependency>
+
+2. template jsp 작성 : header.jsp, left.jsp , footer.jsp , layout.jsp 
+layout.jsp 
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib prefix="tiles" uri = "http://tiles.apache.org/tags-tiles" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title><tiles:insertAttribute name="title" /></title>
+<script src="//code.jquery.com/jquery.min.js"></script>
+<link rel = "stylesheet" type = "text/css" href = "${pageContext.request.contextPath}/resources/css/home.css">
+</head>
+<body>
+<div id = "container">
+	<div id = "header"><tiles:insertAttribute name = "header"/></div>
+	<div id = "left"><tiles:insertAttribute name = "left"/></div>
+	<div id = "main"><tiles:insertAttribute name = "main"/></div>
+	<div id = "footer"><tiles:insertAttribute name = "footer"/></div>
+</div>
+</body>
+</html>
+   
+3. Tiles 설정 파일 정의 : tiles-config.xml  
+<?xml version="1.0" encoding="UTF-8"?>
+   <!DOCTYPE tiles-definitions PUBLIC 
+        "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" 
+        "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+	<definition name="tilesbase" template="/WEB-INF/views/templates/layout.jsp">
+		<put-attribute name="title" value="spring + tiles 연동" />
+		<put-attribute name="header" value="/WEB-INF/views/templates/header.jsp" />
+		<put-attribute name="left" value="/WEB-INF/views/templates/left.jsp" />
+		<put-attribute name="main" value="/WEB-INF/views/templates/home.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/templates/footer.jsp" />
+	</definition>
+</tiles-definitions>   
+      
+4. spring-web xml : 
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:mvc="http://www.springframework.org/schema/mvc"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc-4.2.xsd
+		http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.2.xsd">
+	
+	<bean id = "viewResolver" class = "org.springframework.web.servlet.view.InternalResourceViewResolver"> <!-- DI로 주입 -->
+		<property name="prefix" value = "/WEB-INF/views/"/>
+		<property name="suffix" value = ".jsp"/>
+		<property name = "order" value = "1"/>
+	</bean>
+	
+	<mvc:annotation-driven/>
+	
+	<context:component-scan base-package="org.saiden"/>
+	
+	<!-- Tiles 설정 -->
+	<bean id = "tilesConfigurer" class = "org.springframework.web.servlet.view.tiles3.TilesConfigurer">
+		<property name="definitions">
+			<list>
+				<value>/WEB-INF/tiles-*.xml</value>
+			</list>
+		</property>
+	</bean>
+	
+	<!-- Tiles ViewResolver 설정 -->
+	<bean id = "tilesViewResolver" class = "org.springframework.web.servlet.view.UrlBasedViewResolver">
+		<property name="viewClass" value = "org.springframework.web.servlet.view.tiles3.TilesView"/>
+		<property name = "order" value = "0"/>
+	</bean>
+</beans>

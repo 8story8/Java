@@ -1,0 +1,89 @@
+<!-- 
+폼 : 플립토글
+on/off 토글 버튼
+
+select 를 이용해 생성
+select에 data-role='slider' 속성 적용하면 된다.
+
+option이 3개이상이면 모양이 깨진다.
+-------------------------------------
+메소드
+slider() 를 이용해 활성, 비활성, refresh 처리
+
+문자 입력 필드
+input type=text, number(숫자 증감버튼 생김), textarea
+
+-------------------
+메소드 
+textinput 위젯을 이용해 : disable, enable 써서 비활성/활성화 처리
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Mobile Application</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+	<script type="text/javascript">
+	$(function() {
+	// jQuery form control test
+		$(":button").click(function(){
+			var str=$(this).val();
+			//alert(str);
+			if(str=="disable Silder"){
+				$("#slider-music").slider("disable");
+			}else if(str=="enable Silder"){
+				$("#slider-music").slider("enable");
+			}else if(str=="Silder change"){
+				//alert($("#slider-music").val());
+				if($("#slider-music").val()=="on"){
+					//off에 접근 				
+					$("#slider-music option:eq(1)").attr("selected",true);
+				}else{
+					//on에 접근 
+					$("#slider-music option:eq(0)").attr("selected",true);
+				}
+				$("#slider-music").slider("refresh");//반드시 적용해야 한다. 
+				$("#mess").html($("#slider-music").val());
+			}
+		});//click
+		$("#slider-music").change(function(){
+			$("#mess").html($(this).val());
+		});
+	});
+</script>	
+  </head>
+  <body>
+
+
+	<section id="page1" data-role="page">
+	  <header data-role="header"><h1>jQuery Mobile</h1></header>
+	  <div class="content" data-role="content">
+		<h3>Checkboxes and Radio Buttons</h3>
+		<form id="myform" action="../jsp/formprocessor.jsp" method="post">
+		  <div data-role="fieldcontain">
+		    <label for="slider-music">Music <span id="mess"></span></label>
+		   
+			<select name="slider-music" id="slider-music" data-role="slider">
+			  <option value="on">On</option>		
+			  <option value="off">Off</option>
+			</select>
+		  </div>
+		  <input type="text" name="name" id="name"/>
+		   <input type="number" name="age" id="age"/><!-- 숫자 자동 증감 버튼이 생김 -->
+		   <textarea name="ta" id="ta"></textarea>
+		  <div data-role="controlgroup" data-type="horizontal" align="center">
+			  <input type="button" value="disable Silder" />
+			  <input type="button" value="enable Silder" />
+			  <input type="button" value="Silder change" />
+		  </div>			  
+		</form>
+	  </div>
+	  <footer data-role="footer"><h1>form tag</h1></footer>
+	</section>
+	
+  </body>
+</html>

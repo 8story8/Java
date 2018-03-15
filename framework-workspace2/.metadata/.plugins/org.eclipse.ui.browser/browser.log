@@ -1,0 +1,4 @@
+
+5월 07, 2017 12:52:12.04 NEW SESSION
+5월 07, 2017 12:52:12.04 [8464:9604:0507/125212.043:ERROR:external_registry_loader_win.cc(144)] File C:\Users\Moon\AppData\Local\Google\Drive\user_default\apdfllckaahabafndbhieahigkjlhalf_live.crx for key Software\Google\Chrome\Extensions\apdfllckaahabafndbhieahigkjlhalf does not exist or is not readable.
+5월 07, 2017 12:52:29.17 [11108:10036:0507/125229.173:ERROR:child_thread_impl.cc(762)] Request for unknown Channel-associated interface: ui::mojom::GpuMain

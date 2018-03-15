@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+			<item value="C:\Users\Moon\Desktop\Saiden\Employment\java-kosta\framework-workspace1\mybatis-study"/>
+			<item value="C:\Users\Moon\Desktop\Saiden\Employment\java-kosta\framework-workspace1\a-framework-info"/>
+			<item value="C:\Users\Moon\Desktop\Saiden\Employment\java-kosta\framework-workspace1\springAOP5-around"/>
+			<item value="C:\Users\Moon\Desktop\framework10일차소스"/>
+			<item value="C:\Users\Moon\Desktop\springmvc6-mybatis-inst"/>
+			<item value="C:\Users\Moon\Desktop\springmvc5-multiaction-inst"/>
+			<item value="C:\Users\Moon\Desktop\springmvc4-inst"/>
+			<item value="C:\Users\Moon\Desktop\Saiden\Employment\java-kosta\Android-workspace\jqm"/>
+			<item value="C:\Users\Moon\Desktop\Saiden\Employment\java-kosta\Android-workspace\androidtest1"/>
+			<item value="C:\Users\Moon\Desktop\framework-workspace2\springmvc21-fileupload"/>
+			<item value="C:\Users\Moon\Desktop\framework-workspace2\springmvc20-boot"/>
+			<item value="C:\Users\Moon\Desktop\framework-workspace2\springmvc19"/>
+			<item value="C:\Users\Moon\Desktop\framework-workspace2\springmvc18"/>
+			<item value="C:\Users\Moon\Desktop\framework-workspace2\springmvc17-transaction"/>
+			<item value="C:\Users\Moon\Desktop\framework-workspace2\springmvc16-stockmarket"/>
+			<item value="C:\Users\Moon\Desktop\framework-workspace2\springmvc15-aop"/>
+			<item value="C:\Users\Moon\Desktop\framework-workspace2\springmvc14-board"/>
+			<item value="C:\Users\Moon\Desktop\framework-workspace2"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\Moon\Downloads\spring-4-mvc-jsonp-example-with-rest-responsebody-responseentity.zip"/>
+			<item value=""/>
+			<item value="D:\java-kosta-inst\springmvc11-inst.zip"/>
+			<item value="D:\java-kosta-inst\springmvc10-member-inst2.zip"/>
+			<item value="D:\java-kosta-inst\springmvc7-inst.zip"/>
+			<item value="D:\java-kosta-inst\springmvc3-inst.zip"/>
+			<item value="D:\java-kosta-inst\springmvc2-inst.zip"/>
+			<item value="D:\java-kosta-inst\springmvc1-inst.zip"/>
+			<item value="C:\Users\Moon\Desktop\springmvc22-security.zip"/>
+			<item value="C:\Users\Moon\Desktop\framework-workspace2\springmvc14-board.zip"/>
+			<item value="C:\Users\Moon\Desktop\framework-workspace2\springmvc13.zip"/>
+			<item value="C:\Users\Moon\Desktop\framework-workspace2\springmvc12.zip"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,90 @@
+broker.txt
+***주식 거래 시스템***
+요구사항 
+주식을 고객이 거래하는 시스템
+
+주식은 주식명과 주당 가격으로 구성되고
+현재 공시된 모든 주식정보가 고객에게 
+공개되어야 한다. 
+고객은 고객의 아이디와 비밀번호로 인증되고
+인증된 고객은 자신의 개인정보와 
+자신이 배당받은 주식 정보와 수량이 제공된다.
+고객의 정보는 아이디,비밀번호,고객명,주소로
+구성된다. 
+
+--------------------------------------------
+고객 인증 부분 
+인증 후 고객 정보 제공 ( 고객의 개인 정보 (주소, 이름) 와 
+배당받은 주식 정보)
+거래를 위한 공시된 주식 정보 리스트와 거래 입력 폼이 제공 
+, 거래 입력 폼은 공시된 주식 정보를 선택 후 매도 또는 매수와 
+수량을 선택하도록 제공 
+-----------------------------------------------
+요구사항 정의 ( 핵심 비즈니스 정의 ) 
+1.고객 인증 
+2. 공시된 주식 리스트 정보 
+3.고객 정보 제공 
+  3.1 고객명 , 주소 
+  3.2 고객이 배당받은 주식 정보 ( 주식명, 보유수량 , 총액 ) 
+4. 매도 및 매수 
+
+Data Modeling : ERD 를 논리적 물리적 설계를 도출 
+
+논리적 설계 
+고객 ----0|<- 배당 ->|0------ 주식 
+
+고객과 주식 관계는 다 대 다 관계 
+Association Entity 를 정의해 다 대 다 관계를 해소한다. 
+고객 일반 정보와 주식 일반 정보, 그리고 
+고객과 주식의 관계 정보를 각각 테이블로 구성한다. 
+ 
+물리적 설계  
+customer 		 shares      		  			stock 
+id(pk)			 id와 symbol(복합pk)		symbol(pk)
+password       quantity                      price 
+name
+address
+
+Application Modeling : 
+Model : 영속성 계층 (Repository or DAO)
+		  -> model.CustomerVO
+		  			 StockVO
+		  			 SharesVO
+		  	  model.BrokerDAO 
+		  	  		  BrokerDAOImpl 	  
+		  	  	  	  
+		  비즈니스 계층 (Service) 
+		      model.BrokerService
+		  	  		  BrokerServiceImpl 
+		  	  model.exception.InvaildTransactionException
+		  	  
+Controller : BrokerController 
+View : header.jsp  , index.jsp , stock_marker.jsp 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

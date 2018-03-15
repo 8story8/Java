@@ -1,0 +1,76 @@
+<!-- 
+	  이전 페이지로 되돌아가기 링크 연습 
+	   data-direction="reverse" 
+	  data-rel="back" 같은 효과 
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Insert title here</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- jquery mobile 페이지 레이아웃과 스타일을 정의 -->
+<link rel="stylesheet"
+  href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
+</head>
+<body>
+<!-- 첫 번째 페이지 시작 부분 -->
+   <section id="page1" data-role="page"> 
+      <header data-role="header">
+         <h1>jQuery Mobile</h1>
+      </header>
+      <div class="content" data-role="content">
+         <p>첫 번째  페이지 !</p>
+         <a href="#page2">두 번째 페이지로 전환하기 </a>
+      </div>
+      <footer data-role="footer">
+         <h1> KOSTA</h1>
+      </footer>
+   </section>   
+<!-- 첫 번째 페이지 끝 부분-->
+  
+<!-- 두 번째 페이지 시작 부분 -->  
+   <section id="page2" data-role="page"> 
+      <header data-role="header">
+         <h1>jQuery Mobile</h1>
+      </header>
+      <div class="content" data-role="content">
+         <p>두 번째 페이지 !</p>         
+          <!-- move -->
+      		<p><a href="#page1">첫번째 페이지로 전환하기</a></p>
+      		<p><a href="#page1" data-direction="reverse">
+      		첫페이지로 돌아가기</a></p>
+      		<p><a href="#page3">세번째 페이지로 전환하기</a></p>
+      </div>
+    <footer data-role="footer">
+      <h1> KOSTA</h1>
+    </footer>
+  </section>
+<!-- 두 번째 페이지 끝 부분-->
+  
+<!-- 세 번째 페이지 시작 부분 -->  
+  <section id="page3" data-role="page">
+    <header data-role="header">
+      <h1>jQuery Mobile</h1>
+    </header>
+    <div data-role="content">
+      <p>세 번째 페이지 !</p>
+      <!-- data-rel="back" 이전으로,data-icon="back" 아이콘표현,
+           data-iconpos="notext" 아이콘만 보이게 한다.
+       -->
+    	<a href="#page2" data-role="button" data-icon="back"
+    	data-iconpos="notext"></a>   
+    </div>
+    <footer data-role="footer">
+      <h1> KOSTA</h1>
+    </footer>
+  </section>
+<!-- 세 번째 페이지 끝 부분-->  
+</body>
+</html>
+
+
+
+

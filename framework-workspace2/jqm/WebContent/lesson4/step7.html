@@ -1,0 +1,82 @@
+<!-- 
+레이아웃 그리드 
+div 기반으로 격자 형태의 레이아웃 지정시 사용. 2단에서 5단까지 몇 가지 레이아웃 그리드가 제공됨
+그리드를 담을 div 지정하고 그안에 들어갈 셀 div를 추가한다.
+담을 컨테이너 div에는 ui-grid 클래스를 붙이는데 2단에는 ui-grid-a, 3단은 ui-grid-b, 5단은 ui-grid-d 하는 식이다.
+div에는 ui-block 클래스를 붙인다. 첫번채는 ui-blick-a 두번째는 ui-block-b 다섯번째는 ui-block-e 형태다.
+
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>jQuery Mobile Application</title>
+
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+	<style>
+.content div div p {
+	background-color: #ccc;
+	height: 50px;
+	border: 1px solid #333;
+	margin: 0px;
+}
+p {
+}
+	</style>
+  </head>
+  <body>
+
+
+	<section id="page1" data-role="page">
+	  <header data-role="header"><h1>jQuery Mobile</h1></header>
+	  <div class="content" data-role="content">
+		<h4>2 Colums</h4>
+		<div class="ui-grid-a">
+		  <div class="ui-block-a"><p>Block A</p></div>
+		  <div class="ui-block-b"><p>Block B</p></div>
+		</div>
+		
+		<h4>3 Columns</h4>
+		<div class="ui-grid-b">
+		  <div class="ui-block-a"><p>Block A</p></div>
+		  <div class="ui-block-b"><p>Block B</p></div>
+		  <div class="ui-block-c"><p>Block C</p></div>
+		</div>
+		
+		<h4>4 Columns</h4>
+		<div class="ui-grid-c">
+		  <div class="ui-block-a"><p>Block A</p></div>
+		  <div class="ui-block-b"><p>Block B</p></div>
+		  <div class="ui-block-c"><p>Block C</p></div>
+		  <div class="ui-block-d"><p>Block D</p></div>
+		</div>
+		
+		<h4>5 Columns</h4>
+		<div class="ui-grid-d">
+		  <div class="ui-block-a"><p>Block A</p></div>
+		  <div class="ui-block-b"><p>Block B</p></div>
+		  <div class="ui-block-c"><p>Block C</p></div>
+		  <div class="ui-block-d"><p>Block D</p></div>
+		  <div class="ui-block-e"><p>Block E</p></div>
+		</div>
+		
+		
+		<h4>2 Rows of 3 Columns</h4>
+		<div class="ui-grid-b">
+		  <div class="ui-block-a"><p>Block A</p></div>
+		  <div class="ui-block-b"><p>Block B</p></div>
+		  <div class="ui-block-c"><p>Block C</p></div>
+		  <div class="ui-block-a"><p>Block A</p></div>
+		  <div class="ui-block-b"><p>Block B</p></div>
+		  <div class="ui-block-c"><p>Block C</p></div>
+		</div>
+		
+	  </div>
+	  <footer data-role="footer"><h1>footer</h1></footer>
+	</section>
+
+  </body>
+</html>

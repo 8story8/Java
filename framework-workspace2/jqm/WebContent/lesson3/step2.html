@@ -1,0 +1,45 @@
+<!-- 
+
+목록 뷰에는 이벤트 처리는 자동으로 되지 않는다.
+즉 목록 요소 클릭이나 드래그해도 아무 효과가 없다.
+목록의 요소를 클릭 할 수 있도록 하려면 <a> 링크를 걸어 줘야 한다. 
+step1 과 step2의 리스트를 비교해보자 
+ -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet"
+	href="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.css" />
+<script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+<script
+	src="http://code.jquery.com/mobile/1.0.1/jquery.mobile-1.0.1.min.js"></script>
+</head>
+<body>
+	<section id="page1" data-role="page">
+		<header data-role="header">
+			<h1>jQuery Mobile</h1>
+		</header>
+
+		<div class="content" data-role="content">
+			<h3>순서없는 목록</h3>
+			<ul data-role="listview">
+				<li><a href="#">Item</a></li>
+				<li><a href="#">Item</a></li>
+				<li><a href="#">Item</a></li>
+			</ul>
+			<h3>순서있는 목록</h3>
+			<ol data-role="listview">
+				<li><a href="#">Item</a></li>
+				<li><a href="#">Item</a></li>
+				<li><a href="#">Item</a></li>
+			</ol>
+		</div>
+		<footer data-role="footer">
+			<h1>footer</h1>
+		</footer>
+	</section>
+
+</body>
+</html>

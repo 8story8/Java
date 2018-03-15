@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- MyBatis에서 namespace는 필수적으로 명시해야 함 -->
+ <mapper namespace="product">
+ 	<insert id="register" parameterType="productVO">
+ 	 <selectKey keyProperty="id" resultType="int" order="BEFORE">
+		SELECT product_seq.nextval from dual
+	</selectKey>  
+  insert into spring_product values(#{id},#{name},#{maker},#{price})
+  </insert>
+  <sql id="selectProduct">
+  select id,name,maker,price from spring_product
+  </sql>
+   <select id="findProductById" resultType="productVO">
+   <include refid="selectProduct"></include>
+   where id=#{value}
+  </select>
+  <select id="findProductByName" resultType="productVO">
+  <include refid="selectProduct"></include>
+   where name like '%${value}%'
+  </select>
+  <select id="findProductByMaker" resultType="productVO">
+  <include refid="selectProduct"></include>
+   where maker=#{value}
+  </select>
+ </mapper>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

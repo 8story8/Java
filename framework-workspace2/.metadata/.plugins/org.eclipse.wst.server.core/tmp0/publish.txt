@@ -1,0 +1,6 @@
+#Tomcat publish data
+#Fri Aug 11 14:04:10 KST 2017
+org.eclipse.jst.jee.server\:springmvc22-security=C\:\\Users\\Moon\\Desktop\\Saiden\\Employment\\java-kosta\\WAS\\spring-tomcat\\webapps\\springmvc22-security
+org.eclipse.jst.jee.server\:springmvc6-mybatis=C\:\\Users\\Moon\\Desktop\\Saiden\\Employment\\java-kosta\\WAS\\spring-tomcat\\webapps\\springmvc6-mybatis
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Moon\\.m2\\repository\\org\\springframework\\spring-web\\4.2.5.RELEASE\\spring-web-4.2.5.RELEASE.jar=C\:\\Users\\Moon\\Desktop\\Saiden\\Employment\\java-kosta\\WAS\\spring-tomcat\\webapps\\springmvc22-security\\WEB-INF\\lib\\spring-web-4.2.5.RELEASE.jar
+org.eclipse.jst.jee.server\:androidtest1=C\:\\Users\\Moon\\Desktop\\Saiden\\Employment\\java-kosta\\WAS\\spring-tomcat\\webapps\\androidtest1
