@@ -1,0 +1,30 @@
+**Model2 Architecture**
+Model2 구조는 MVC Pattern을 근간으로 한다.
+
+Model : Business와 Data Access Logic을 처리(Java Beans가 담당)
+		   ex) Service, DAO, VO, DTO 등
+
+View : 화면을 담당(JSP)
+
+Controller : 제어를 담당(Servlet)
+		        Client의 요청을 분석하여 Model과 연동하고,
+		        결과를 적절한 View(JSP) 선택, 이동시킨다.
+
+**이동 방식**
+Controller는 요청에 대한 응답을 위해 View(JSP)를 지정하여 이동시켜야 한다.
+이때 이동 방식은 forward 방식과 redirect 방식이 있다.
+forward 방식 : Web Container상에서 이동, Client는 알아차리지 못한다.
+				   기존 request와 response가 유지된다.
+				   request.setAttribute(name, value)를 이용해 정보를 공유한다.
+				   즉, View(JSP)가 이 정보를 이용해 응답한다.
+				   URL이 변경되지 않는다.
+				   주로 정보 조회시 사용된다.(select)
+				   새로고침시 기존의 요청이 반복될 수 있다.
+ex) request.getRequestDispatcher(request, response).forward("find_ok.jsp");
+redirect 방식 : Client에게 응답시 이동을 명령하는 방식
+				   즉, Client Browser가 해당 URL로 이동하므로 URL이 변경된다.
+				   기존 request와 response가 유지되지 않는다.
+				   주로 정보 등록 및 수정시 사용된다.
+ex) response.sendRedirect("find_ok.jsp");
+
+redirect 방식 

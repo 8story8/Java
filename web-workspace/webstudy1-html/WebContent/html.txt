@@ -1,0 +1,24 @@
+**HTML**
+W3C(World Wide Web Consortium)
+: WWW(World Wide Web) 표준을 개발하고 장려하는 조직
+
+HTML(Hyper Text Markup Lanaguage)
+: Web Browser에게 Page를 표현하라고 명령하기 위한 언어
+  --> Web Page의 정보를 표현하는 역할
+
+HTTP(Hyper Text Transfer Protocol)
+
+JavaScript : Web Page의 동작을 담당, 이후 ajax, node.js 등으로 발전)
+
+CSS(Cascading Style Sheet) : Web Page Design을 담당
+
+												WAS(Web Application Server)		<-->		DB
+Browser				--request-->    	HTML			Web Container
+Client Program		<--response--						Servlet / JSP
+
+HTML 구성 요소
+1. 선언부 DOCTYPE
+    <!DOCTYPE html> : html5 문서 선언부
+2. <html> : 웹문서의 루트
+3. <head> : 웹문서의 메타 정보
+4. <body> : 웹문서 내용을 정의

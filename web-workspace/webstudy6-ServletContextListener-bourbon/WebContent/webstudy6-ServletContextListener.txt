@@ -1,0 +1,9 @@
+**ServletContextListener**
+ServletContext 객체는 Web Application 시작 시점에 생성된다.
+ServletContext 객체가 생성 초기화 작업이 필요한 경우 or 소멸되기 직전 작업이 필요한 경우
+ServletContextListener Interface를 implements하고,
+추상 메서드 contextInitialized(), contextDestroyed()를 Overriding하면 된다.
+--> 현재 Web Application에서 DB 연동시
+      Driver Loading은 한 번만 실행되면 되므로,
+      ServletContextListener Interface의 contextInitialized()를 Overriding한다.
+      --> 각 Servlet과 JSP는 동일한 Programming 작업을 피할 수 있다.

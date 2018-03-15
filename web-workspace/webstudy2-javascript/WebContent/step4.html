@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>javascript dom</title>
+<script>
+	function showId(){
+		// 사용자가 입력한 id를 alert()로 출력
+		// document.폼이름.입력양식이름.value
+		/* 
+		alert(document.testForm.userId.value);
+		document.testForm.userId.value = "";   // text 입력창의 정보를 지운다.
+		document.testForm.userId.focus();   // focus를 준다. 
+		*/
+		
+		// 위 코드를 변수로 처리하면 아래와 같다.
+		var idComp = document.testForm.userId
+		alert(idComp.value);
+		idComp.value = "";
+		idComp.focus();
+	}
+</script>
+</head>
+<body>
+<form name = "testForm">
+	아이디 <input type = "text" name ="userId" >
+	<input type = "button" value = "확인" onclick = "showId()">
+</form>
+
+</body>
+</html>

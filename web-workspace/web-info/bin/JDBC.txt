@@ -1,0 +1,24 @@
+**JDBC**
+Java DataBase Connectivity로서,
+Java Application과 DataBase 연동을 위한 기술
+Java Application <---> JDBC <---> SQL <---> DB
+
+JDBC 개발 단계
+1. Driver Loading : DB와 Java Application 연동을 위한 기초 정보를 로딩한다.
+						 ex) Class.forName(driverName)
+2. Connection : DB와 연동을 위한 연결
+					 ex) Connection con = DriverManager.getConnection(url, user, password);
+3. PreparedStatement : SQL 실행
+							   ex) String sql = "select name from member where id = ? and password = ?"; 
+							   		PreparedStatement pstmt = con.preparedStatement(sql);
+							   		pstmt.setString(1, "bourbon");   // 1은 첫 번째 물음표
+							   		pstmt.setString(2, "7");   // 2는 두 번째 물음표
+							   		ResultSet rs = pstmt.executeQuery();   // SQL 실행
+							   		// select : exequteQuery();
+							   		// insert, delete, update : exequteUpdate();
+4. ResultSet : select 실행시 반환되는 SQL 결과 정보
+   next(); : boolean, 다음 결과 row가 있으면 true로 Cursor 이동
+   getString(1); : 1은 column index
+   getString("id"); : id는 column명
+   getInt(2); : 타입이 number이고 정수로 반환받을 경우
+ 5. close(); : 자원을 해제

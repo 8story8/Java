@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">&#x0A;<refactoring comment="Rename resource &apos;webstudy27-JSTL&apos; to &apos;webstudy27-JSTL1&apos;" description="Rename resource &apos;webstudy27-JSTL&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/webstudy27-JSTL" name="webstudy27-JSTL1" stamp="1489325271720" updateReferences="true"/>&#x0A;<refactoring comment="Delete resource &apos;webstudy27-JSTL1&apos;" deleteContents="true" description="Delete resource &apos;webstudy27-JSTL1&apos;" element1="/webstudy27-JSTL1" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1489325293902"/>
+</session>

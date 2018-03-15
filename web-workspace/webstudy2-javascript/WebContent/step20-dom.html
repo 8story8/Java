@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>step20-dom</title>
+<script>
+	function testSpan(){
+		document.getElementById("nameView").innerHTML = "Jin";
+	}
+	
+	function testInput(){
+		document.getElementById("address").value = "Kid";
+	}
+</script>
+</head>
+<body>
+<span id = "nameView"></span>
+<input type = "button" value = "span 테스트" onclick = "testSpan()">
+<hr>
+<input type = "text"  id = "address" value = "input 테스트" onclick = "testInput()">
+</body>
+</html>

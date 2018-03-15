@@ -1,0 +1,54 @@
+body {
+	background-color: #E1F5A9;
+	font-size: medium;
+}
+
+li {
+	color: orange;
+}
+/*
+class 선택자를 이용해 style 부여
+class를 선택할 때는 .클래스명
+*/
+.test {
+	color: lime;
+}
+
+/*
+id 선택자를 이용해 style 부여
+id를 선택할 때는 #아이디명"WebContent/step1-selector2.html"
+*/
+
+#test2 {
+	color: aqua;
+}
+
+table{
+	border-collapse: collapse;
+}
+
+table,th,td{
+	border:1px solid black;
+}
+
+th, td{
+	padding: 15px;
+}
+
+/* 한 번도 클릭하지 않은 링크 */
+a:LINK{ 
+	color: #888; 
+	text-decoration: none;
+}
+
+/* 마우스 오버시 색상 변경 */
+a:HOVER{
+	color:#ffcc00;
+	text-decoration: none;
+}
+
+/* 한 번 이상 방문한 링크의 색상 및 언더라인을 생기지 않게 함 */
+a:VISITED{
+	color:#FAAC58;
+	text-decoration: none;
+}

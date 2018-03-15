@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Mon Mar 20 22:58:22 KST 2017
+org.eclipse.jst.jee.server\:webstudy31-Join=C\:\\Users\\Moon\\Desktop\\Saiden\\Employment\\java-kosta\\WAS\\web-tomcat\\webapps\\webstudy31-Join
+org.eclipse.jst.jee.server\:webstudy30-board=C\:\\Users\\Moon\\Desktop\\Saiden\\Employment\\java-kosta\\WAS\\web-tomcat\\webapps\\webstudy30-board
+org.eclipse.jst.jee.server\:webstudy29-cart=C\:\\Users\\Moon\\Desktop\\Saiden\\Employment\\java-kosta\\WAS\\web-tomcat\\webapps\\webstudy29-cart

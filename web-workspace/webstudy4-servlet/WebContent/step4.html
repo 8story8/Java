@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>회원가입폼</title>
+<script src = "myscript.js"></script>
+</head>
+<body>
+<form action = "RegisterServlet" method = "post" name = "registerForm" onsubmit = "return checkForm1()">
+	아이디 <input type = "text" name = "memId" required = "required">(3자 이상 10자 이하)<br>
+	비밀번호 <input type = "password" name = "memPass" required = "required">(5자 이상)<br>
+	<!--패스워드와 패스워드 확인은 일치해야 가입 가능-->
+	비밀번호 확인 <input type = "password" name = "confirmPass" required = "required"><br>
+	이름 <input type = "text" name = "memName" required = "required"><br>
+	주소 <input type = "text" name = "memAddress" required = "required"><br>
+	성별 <input type = "radio" name = "gender" value = "남">남
+		  <input type = "radio" name = "gender" value = "여">여
+	<br>
+	혈액형 <select name = "blood">
+				<option value = "">-혈액형-</option>
+				<option value = "A">-A형-</option>
+				<option value = "B">-B형-</option>
+				<option value = "O">-O형-</option>
+				<option value = "AB">-AB형-</option>
+			</select>
+	<input type = "submit" value = "등록">
+</form>
+</body>
+</html>

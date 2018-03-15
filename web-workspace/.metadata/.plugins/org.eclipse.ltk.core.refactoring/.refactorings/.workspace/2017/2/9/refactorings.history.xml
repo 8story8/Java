@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;webstudy8-annotation-inst&apos; to &apos;webstudy8-annotation&apos;" description="Rename resource &apos;webstudy8-annotation-inst&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/webstudy8-annotation-inst" name="webstudy8-annotation" stamp="1488204777284" updateReferences="true"/>
+</session>

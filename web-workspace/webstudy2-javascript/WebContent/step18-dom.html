@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>step18-dom.html</title>
+<style>
+	div{
+		background-color:orange;
+	}
+	
+	span{
+		background-color:lime;
+	}
+</style>
+
+<script>
+	function testDiv(){
+		var d1 = document.getElementById("divOne");
+		alert(d1.innerHTML);
+		d1.innerHTML = "";
+		
+		document.getElementById("divTwo").innerHTML = "";
+	}
+	
+	function testSpan(){
+		alert(document.getElementById("spanOne").innerHTML);
+		document.getElementById("spanOne").innerHTML = "";
+	}
+</script>
+</head>
+<body>
+<input type = "button" onclick = "testDiv()" value = "div 제어">
+<input type = "button" onclick = "testSpan()" value = "span 제어">
+<hr>
+<div id = "divOne">이 영역은 div 부분입니다.</div>
+<span id = "spanOne">이 영역은 span 영역입니다.</span>
+<div id = "divTwo">이 영역은 div 부분입니다.</div>
+</body>
+</html>

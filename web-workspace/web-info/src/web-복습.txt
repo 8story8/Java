@@ -1,0 +1,30 @@
+**review**
+1. HTTP
+
+2. HTML, JavaScript, CSS
+
+3. Servlet, JSP 정의 및 차이점
+  
+4. get 방식, post 방식
+
+5. WAS, Web Container 역할
+
+6. DD
+
+7. Servlet LifeCycle, JSP LifeCycle
+
+8. Servlet 계층 구조
+
+9. ServletConfig, ServletContext 비교
+
+10. Cookie, Session 비교
+
+11. Model1, Model2 비교
+
+12. Model2 -> MVC 역할
+
+13. Singleton Pattern, static 역할 및 관계
+
+14. Front Controller Pattern
+
+15. Controller, HandlerMapping 역할

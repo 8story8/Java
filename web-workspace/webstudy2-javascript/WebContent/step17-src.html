@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>step17-src.html</title>
+<script src = "myscript.js"></script>
+</head>
+<body>
+<form name = "testForm">
+	<input type = "button" value = "테스트" onclick = "testSrc()">
+</form>
+
+<form action = "order.jsp" name = "menuForm" onsubmit = "return checkForm()">
+	<input type = "checkbox" name = "menu">피자<br>
+	<input type = "checkbox" name = "menu">돈까스<br>
+	<input type = "checkbox" name = "menu">스파게티<br>
+	<input type = "text" name = "count" size = "2">인분
+	<input type = "submit" value = "주문" >
+</form>
+</body>
+</html>

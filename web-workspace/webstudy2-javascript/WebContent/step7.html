@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>javascript form check</title>
+<script>
+	function deposit(){
+		var money = document.depositForm.money;
+		
+		if(money.value == ""){
+			alert("입금액을 입력하세요!")
+		}
+		else if(money.value <= 0)
+		{
+			alert("잘못된 입금액입니다!")	
+		}
+		else if(isNaN(money.value))
+		{
+			alert("입금액은 숫자로 입력하세요!")	
+		}
+		else{
+			alert(money.value + "원 입금이 완료되었습니다!")	
+		}
+		
+		money.value = "";
+		money.focus();
+	}
+</script>
+</head>
+<body>
+<form name = "depositForm">
+	금액 <input type = "text" name = "money">
+	<input type = "button" value = "입금하기" onclick = "deposit()">
+</form>
+<!--
+입금하기 버튼을 눌렀을 때
+1) 입력하지 않고 공란이면 "입금액을 입력하세요!" alert()
+2) 금액이 0이하이면 "잘못된 입금액입니다!" alert()
+3) 금액이 숫자가 아니면 "입금액은 숫자로 입력하세요! alert()"
+4) 올바른 금액이 입력되면 "?원 입금이 완료되었습니다!" alert()
+-->
+</body>
+</html>

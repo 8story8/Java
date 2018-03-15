@@ -1,0 +1,8 @@
+webstudy18에서 Front Controller Pattern을 적용하여 개발
+--> 업무가 증가할수록 Front Controller인 DispatcherServlet이 비대해진다.
+     --> Controller 업무별로 별도의 Class를 정의해 처리하도록 설계
+          --> 표준화(Polymorphism)을 위해 Controller 인터페이스를 정의하고,
+          	   모든 Controller들은 이 인터페이스를 구현하도록 설계한다.
+          Client --검색--> DispatcherServlet -------------------- Controller 인터페이스
+          Client --등록-->										|						 |						  |
+          Client --수정-->				 				검색 Controller		등록 Controller		수정 Controller		

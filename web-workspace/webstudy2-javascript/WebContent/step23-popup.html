@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>step23-popup.html</title>
+<script>
+	function closePopup(){
+		window.self.close();
+	}
+	
+	function testOpener(){
+		// 현재 창의 hidden에 접근해서 value를 alert로 출력
+		alert(window.opener.document.testForm.data.value);
+		
+		// 현재 창에서 입력한 text nickName의 정보도 출력
+		alert(window.opener.document.testForm.nickName.value);
+		
+		// 현재 창의 nickName 정보를 삭제
+		window.opener.document.testForm.nickName.value = "";
+		alert(window.opener.document.testForm.nickName.value);
+	}
+</script>
+</head>
+<body bgcolor = "yellow">
+팝업창입니다!<br><br>
+<input type = "button" value = "확인" onclick = "closePopup()"><br>
+<input type = "button" value = "현재 창에 접근 테스트" onclick = "testOpener()">
+</body>
+</html>

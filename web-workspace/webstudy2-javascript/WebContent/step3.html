@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>javascript 내장 함수 테스트</title>
+<script>
+	function enterHome(){
+		// confirm 함수는 확인을 누르면 true, 취소를 누르면 false를 반환
+		var result = confirm("당신은 관리자인가요?")
+		if(result)
+		{
+			alert("관리자 계정으로 접속합니다!");
+			location.href = "http://www.naver.com";
+		}
+		else
+		{
+			alert("담당 부서에 연락하여 관리자 계정 권한을 얻으시기 바랍니다!");
+		}
+	}
+</script>
+</head>
+<body>
+<input type = "button" value = "Naver 접속" onclick = "enterHome()">
+</body>
+</html>

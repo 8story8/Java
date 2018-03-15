@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Servlet Form 연동</title>
+<script src = "myscript.js"></script>
+</head>
+<body>
+<form method = "get" action = "EnterServlet" name = "EnterForm" onsubmit = "return checkForm2()">
+	<input type = "text" name = "userName" required = "required"><br>
+	<input type = "text" name = "userAge" required = "required"><br>
+	<input type = "submit" value = "입장">
+</form>
+<!--1. 나이를 숫자로 입력하지 않으면,
+         "나이는 숫자로 입력하세요!" alert()-->
+</body>
+</html>

@@ -1,0 +1,52 @@
+**Model 2**
+MVC Pattern이 근간을 이룬다.
+Model : Business + Data Access Logic
+		   ex) DAO, Service, DTO, VO 등
+		   Java Beans(or Component)
+		   Component : Object들이 서로 교류하여 만들어진 독립된 기능 단위
+		   ex) 뇌세포(Object)들이 모여 뇌(Component)가 구성된다.
+View : 화면을 전담하고 JSP(Java Server Page)가 이 역할을 담당
+Controller : Web Application의 제어를 담당
+			    Client의 요청을 분석 --- request.getParameter(command);
+			    요청에 따라 Model과 연동 --- DAO.getInstance().find...();
+			    연동 결과를 공유 --- request.setAttribute(name, value);
+			    응답을 위한 View로 이동 --- forward or redirect
+			    
+아래의 경우는 Servlet이 계속 증가된다.	
+Controller 영역에서 일관성, 재사용성, 통일성있는 정책을 적용하는 데 한계가 있다.	    
+Client --- FindServlet
+Client --- UpdateServlet
+Client --- DeleteServlet
+
+기존 Model2 MVC에 Front Controller Pattern을 적용한다.
+즉, 모든 Client의 요청을 하나의 Servlet이 처리하도록 설계한다.
+이 경우, DispatcherServlet의 업무량이 급증할 수 밖에 없다.
+Client								    
+Client --- DispatcherServlet(Front Controller)
+Client
+
+따라서 Controller Logic별로 분화시키는 설계를 적용한다.
+위와 같이 계층 구조를 통한 표준화 정책을
+Controller 인터페이스와 하위 구현체(FindController, UpdateController 등)로 설계하면,
+Encapsulation, Inheritance, Polymorphism의 장점을 얻을 수 있다.
+시스템의 요구사항이 복잡해질수록,
+Front Controller인 DispatcherSerlvet의 Controller 구현체 생성 부분이 증가될 수 있다.
+Client --- DispatcherServlet --- Controller
+                                         |	  								|  							|
+                                        FindController 		UpdateController 		DeleteController
+
+이에 DispatcherServlet과 개별 Controller(FindController, UpdateController 등)와의 결합도를 낮추고,
+구현체 생성 부분을 별도의 Class가 담당하도록 HandlerMapping(Factory 클래스)을 추가 설계한다.
+DispatcherServlet : FrontController
+ 						 Client 요청을 받는다.
+ 						 HandlerMapping을 이용해 개별 구현체를 Controller 인터페이스 타입으로 반환받는다.
+ 						 Controller Logic을 실행시킨다.
+ 						 실행 후 반환되는 URL 및 이동 방식에 의거해
+ 						 Model 연동 결과와 공유 후,
+ 						 View로 이동시킨다.(forward, redirect)
+HandlerMapping : Controller 구현체 생성을 전담하는 객체
+ 						 (Simple Factory Pattern)
+Controller : 실제 Controller Logic을 전담하는 구현체들의 상위 표준 인터페이스
+Client --- DispatcherServlet --- HandlerMapping --- Controller
+
+

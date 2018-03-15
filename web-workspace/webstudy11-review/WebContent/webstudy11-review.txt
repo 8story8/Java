@@ -1,0 +1,109 @@
+**Review**
+- HTML, JavaScript, CSS, Servlet, JSP
+  : HTML -> Web Page의 Content(내용)
+    JavaScript - > Web Page의 동작(행위)
+    CSS -> Web Page의 Layout(Design Style)
+    Servlet -> Java Web Application을 위한 기술
+     		      Java Code내에서 HTML을 기술하여 출력
+     		      Model2 설계 방식에서 Controller 역할을 담당
+    JSP -> Java Server Page로 동적인 Web Page를 구현하기 위한 기술
+    	      Web Container에 의해 Servlet으로 변환되어 실행
+    	      (JSP는 Servlet이다.)
+    	      Model2 설계 방식에서는 View 역할을 담당
+    	      
+   HTTP :  HyperText Transfer Protocol
+   
+   WAS : Web Application Server
+    		Web Server		+ 		Web Container
+    		(HTML Service) 		(Servlet, JSP 실행 환경)
+    		
+   Web Container : Servlet, JSP 실행 환경
+   						 Servlet LifeCycle 관리
+   						 (init(ServletConfig) -> service(request, response), destroy())
+   						 JSP를 Java(Servlet Class)로 변환하고 Compile
+   
+   DD(Deployment Descriptor)
+   --> 배포 기술서로 Web Application이 최초 실행시 읽어서 Load하는 정보
+   --> web.xml : welcome file 대문 화면
+    				  Servlet 설정, ServletConfig 초기 Parameter 설정
+    				  ServletContext 초기 Parameter 설정
+    				  ServletContextListener 설정
+    				  ...
+    
+   HTML form get, post 요청 방식
+   get : 조회, URL 노출, 보안성이 떨어진다, 대용량 전송 불가능
+   		  tomcat\server.xml에서 get 방식 한글 처리 설정
+   post : 정보 전송용, URL 노출 X, 보안성이 우수하다, 대용량 전송 가능
+     	   별도의 한글 처리가 필요 
+     	   
+   Servlet LifeCycle
+   Class Loading -> 객체 생성(Constructor 호출) -> init(ServletConfig)
+   위 과정은 최초 1번 실행
+   service(request, response) --> doGet(request, response) or doPost(request, response)
+   Client 요청시마다 매번 실행 
+   ex) Client Login Service					LoginServlet
+        100명                  	---------->	객체 1
+        											init() 1
+        											ServletConfig 1
+        											service() 100
+        											ServletContext 1
+   
+   ServletConfig : Servlet 객체당 하나
+   					   init 호출 시점에 Web Container가 주입한다.
+   					   개별 Servlet이 Web Service에 필요한 설정 정보 객체
+   					   
+   ServletContext : Web Application당 하나
+   						Web Appliacion 최초 실행시 생성된다.
+   						
+   JSP LifeCycle
+   ref) Web Container가 변환시켜 저장하는 공간
+   	    tomcat\work 아래
+   .jsp --> .java --> .class --> 객체 생성 --> init(ServletConfig)
+   위 과정은 최초 요청시(실행시) 한 번 실행
+   service(request, response)
+   매번 요청시마다 실행
+   해제 직전 destroy()
+   
+   **JSP 기본 문법**
+   1. <%@		%> 지시자(Web Container에게 현 JSP 정보 제공)
+    				  	  import, encoding, errorPage, or session 등
+   2. <%			%> scriptlet, service 메서드내에 Java 기술
+   3. <%=	    %> 출력
+   4. <%--	  --%> 주석
+   5. <%!			%> 멤버변수 또는 메서드 선언
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+    					 
+    		 
+    		 
+    		 
+    		 
+    		 
+    		 
+    		 
+    		 
+    			 
+    			 
+    			 
+    			 
+    			 
+    			 
+    			 
+    			 
+    			 
+    			 

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>step21</title>
+<script>
+	function testSpan(){
+		var leftView = document.getElementById("leftView")
+		var rightView = document.getElementById("rightView");
+		
+		if(rightView.innerHTML == ""){
+			rightView.innerHTML = leftView.innerHTML;
+			leftView.innerHTML = "";
+		}
+		else{
+			leftView.innerHTML = rightView.innerHTML;
+			rightView.innerHTML = "";
+		}
+	}
+	
+	function testInput(){
+		var leftAddress = document.getElementById("leftAddress")
+		var rightAddress = document.getElementById("rightAddress");
+		
+		if(rightAddress.value == ""){
+			rightAddress.value = leftAddress.value;
+			leftAddress.value = "";
+		}
+		else{
+			leftAddress.value = rightAddress.value;
+			rightAddress.value = "";
+		}
+	}
+</script>
+</head>
+<body>
+<body>
+<span id = "leftView">스테이크</span>
+<input type = "button" value = "이동" onclick = "testSpan()">
+<span id = "rightView"></span>
+<hr>
+
+<input type = "text"  id = "leftAddress" value = "판교" size = "4">
+<input type = "button" value = "이동" onclick = "testInput()">
+<input type = "text"  id = "rightAddress" size = "4">
+</body>
+</body>
+</html>

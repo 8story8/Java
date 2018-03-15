@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="ExternalProjectImportWizard">
+		<item value="true" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="true" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value=""/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value="C:\Users\Moon\Desktop\webstudy32-board-login.zip"/>
+			<item value="C:\Users\Moon\Desktop\webstudy31-Join.zip"/>
+			<item value="C:\Users\Moon\Desktop\webstudy30-board.zip"/>
+			<item value="C:\Users\Moon\Desktop\webstudy28-JSTL-ex.zip"/>
+			<item value="C:\Users\Moon\Desktop\webstudy27-JSTL.zip"/>
+			<item value="C:\Users\Moon\Desktop\webstudy26-EL.zip"/>
+			<item value="C:\Users\Moon\Desktop\webstudy24-actionTag.zip"/>
+			<item value="C:\Users\Moon\Desktop\webstudy23-dbcp.zip"/>
+			<item value="C:\Users\Moon\Desktop\webstudy21-member.zip"/>
+			<item value="C:\Users\Moon\Desktop\webstudy20-HandlerMapping.zip"/>
+			<item value="C:\Users\Moon\Desktop\webstudy19-model2-frontController2.zip"/>
+			<item value="C:\Users\Moon\Desktop\webstudy18-model2-frontController.zip"/>
+			<item value="C:\Users\Moon\Desktop\webstudy17-model2-basic.zip"/>
+			<item value="C:\Users\Moon\Desktop\webstudy16-model1-member.zip"/>
+			<item value="D:\java-kosta-inst\webstudy8-annotation-inst.zip"/>
+			<item value="C:\Users\Moon\Desktop\webstudy10-jsp.zip"/>
+			<item value="C:\Users\Moon\Desktop\webstudy13-session-servlet.zip"/>
+			<item value="C:\Users\Moon\Desktop\webstudy14-jsp-session.zip"/>
+			<item value="C:\Users\Moon\Desktop\webstudy15-jsp-ex.zip"/>
+			<item value="C:\Users\Moon\Downloads\webstudy11-review-inst.zip"/>
+		</list>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jst.servlet.ui.project.facet.WebProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
+			<item value="org.eclipse.wst.web.ui"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="348" key="DIALOG_X_ORIGIN"/>
+		<item value="336" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="BasicNewProjectResourceWizard">
+	</section>
+</section>

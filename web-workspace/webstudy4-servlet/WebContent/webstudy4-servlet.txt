@@ -1,0 +1,97 @@
+Servlet 기본
+환경 설정
+WAS(apache-tomcat) 설치 및 설정
+-> conf/server.xml : Web Port 변경(Oracle Web Port와 중복되므로)
+						   get 방식 요청시 한글 처리를 위해
+						   URIEncoding = "UTF-8"
+-> conf/context.xml : reloadable = "true"
+  							 개발 시점에 변경되는 코드를 자동으로 리로딩하도록 설정
+  							 (Workspace --배포--> webapps)
+  							 
+Servlet 
+Browser --request--> WAS(Web Server + Web Container) <--> DB							 
+           <--response--
+Browser : HTML 문서를 번역
+             HTML, JavaScript, CSS를 해석하여 웹화면을 제공
+             HTTP 기반 메세지를 송수신한다.
+HTTP : HyperText Transfer Protocol
+WAS : Web Server와 Web Container
+Web Server : HTML Service
+Web Container : Servlet Container or JSP Engine이라고도 한다.
+					  Servlet과 JSP가 실행될 수 있는 환경을 제공한다.
+					  (Servlet & JSP Library, Servlet LifeCycle, JSP를 Java(Servlet)로 변환 등)
+
+HTTP 요청 방식 get과 post
+get 방식 : 정보 조회 용도
+			 모든 Link는 get 방식으로 요청된다.
+			 Browser URL에 노출된다.
+			 전송 데이터 양은 한정된다.		
+			 Form 태그에서 별도의 Method(전송 방식)을 명시하지 않으면,
+			 기본이 get 방식으로 요청된다.
+post 방식 : 정보 전송 용도
+			   Browser URL에 노출되지 않고 HTTP Body 부분으로 전송된다.
+			   즉, 보안성이 get 방식보다 높다.
+			   사용자 정보 및 많은 용량의 데이터는 post 방식으로 전송해야 한다.
+				post 방식으로 전송되는 데이터에 대한,
+				Server Program 차원에서의 별도의 한글 처리가 필요하다.
+				(request.setCharacterEncoding("UTF-8");)
+				
+Client								    Servlet
+HTTP get 방식 요청 ----------> doGet(request, response)
+HTTP post 방식 요청 ----------> doPost(request, response)
+
+web.xml : DD(Deployment Descriptor)
+			 Web Application의 설정 정보(메타 정보)를 명시한다.
+			 Web Application 최초 시작할 때 DD 파일을 로딩한다.
+			 (ServletConfig, ServletText, Session 설정 등)
+			
+Meta-Data
+Data의 Data, 설정 정보
+Web Application의 Meta-Data는 XML과 Annotation으로 작성 가능하다.
+Annotation : 의미있는 주석
+                 Source + Meta-Data가 결합하는 방식
+				 ex) @Override, @WebServlet(URL), @Controller 등
+XML : eXtensible Markup Language
+        확장 가능한 마크업 언어
+        -> 주로 메타 정보를 저장할 때 사용
+            -> 2000년 중반에는 Ajax를 위해 사용했으나 최근에는 JSON으로 대체
+        Source + Meta-Data가 분리되는 방식
+web.xml상에서 Servlet 설정
+<servlet>
+    <!-- servlet-name : 임의로 정하며 servlet-mapping과 연결-->
+	<servlet-name>mst</servlet-name>
+	<!-- 실제 클래스의 패키지명과 클래스명>-->
+	<servlet-class>step2.MethodServlet</servlet-class>
+</servlet>
+	
+<servlet-mapping>
+	<!--servlet 태그의 servlet-name과 일치-->
+	<servlet-name>mst</servlet-name>
+	<!--Client에서 요청하는 Server Program URL(action)-->
+	<url-pattern>/ms</url-pattern>
+</servlet-mapping>
+
+주요 용어
+Servlet
+WAS
+HTTP
+Browser
+Web Container
+web.xml
+Form Method
+Form Action
+get 방식, post 방식
+JavaScript
+HttpServletRequest와 HttpServletResponse
+
+Servlet, HttpServletRequest, HttpServletResponse, ServletConfig, ServletContext
+--> 위의 모든 요소들은 모두 Interface이다.
+     왜 많은 주요 요소들이 Interface로 설계되어졌을까?
+
+내일 수업 주요 목차
+- request.getParameterValues()
+- Servlet LifeCycle
+- ServletConfig
+- ServletContext
+	
+					  

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>javascript select</title>
+<script>
+	function checkSelect(){
+		var select = document.subwayForm.line;
+		
+		if(select.value == ""){
+			alert("호선을 선택해주세요!")
+		}
+		else{
+			alert(select.value + "호선을 선택하셨습니다!")
+		}
+		
+		document.subwayForm.reset();
+	}
+</script>
+</head>
+<body>
+<form name = "subwayForm">
+	<select name = "line">
+		<option value = "">--호선--</option>
+		<option value = "1">1호선</option>
+		<option value = "2">2호선</option>
+		<option value = "3">3호선</option>
+	</select>
+	<input type = "button" value = "확인" onclick = "checkSelect()">
+	</form>
+</body>
+</html>

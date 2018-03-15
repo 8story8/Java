@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>javascript function</title>
+</head>
+<script>
+	// javascript function 함수 정의
+	function hello(){
+		alert("ㅋㅋㅋ");
+		console.log("hello() 함수가 실행되었습니다!");
+	}
+	
+	function hi(info){
+		alert("전달받은 정보 : " + info);
+		console.log("hi() 함수가 실행되었습니다!");
+	}
+	
+	function bye(name, age){
+		alert("이름 : " + name + ", 나이 : " + age);
+		console.log("bye() 함수가 실행되었습니다!");
+	}
+</script>
+<body>
+	JavaScript 함수 예제
+	<br><br>
+	<input type = "button" value = "버튼1" onclick = "hello()">
+	<input type = "button" value = "버튼2" onclick = "hi('너무 졸려')">
+	<input type = "button" value = "버튼3" onclick = "bye('Kir', 20)">
+</body>
+</html>

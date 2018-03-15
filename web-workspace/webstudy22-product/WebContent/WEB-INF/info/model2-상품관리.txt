@@ -1,0 +1,53 @@
+**요구 사항**
+상품 정보를 신규로 등록할 수 있다.
+상품 정보는 상품번호, 상품명, 제조사, 가격, 등록일시로 구성
+상품 번호는 유일해야 한다. 
+상품 등록 후 전체 상품 목록이 제공된다. 
+전체 상품 목록(List)는 상품번호, 상품명, 등록일시가 제공된다.
+목록에서 등록일시는 년, 월, 일 형태로 제공된다.
+상품명을 클릭하면 상세 상품 정보를 제공한다.
+상세 상품 정보는 상품번호, 상품명, 제조사, 가격 , 등록일시가 제공된다.
+상세 상품 정보의 등록일시는 년, 월, 일, 시, 분, 초까지 제공된다.
+상세 상품 정보의 하단부에서 삭제하기 버튼을 제공한다.
+삭제하기 버튼을 사용자가 누르면,
+상품을 삭제하시겠습니까 여부를 물어본다.
+확인하면 해당 상품을 삭제하고 전체 상품 목록 페이지로 이동한다.
+
+1. 요구 사항 정의
+- 등록 기능
+- 전체 상품 목록 제공 기능
+- 상세 상품 정보 제공
+- 삭제 기능
+
+2. 설계
+- DB
+  상품번호 : number, primary key, sequence 사용
+  상품명 : varchar2
+  제조사 : varchar2
+  가격 : number
+  등록일시 : date
+  
+- Application : Model2 MVC 기반 설계
+
+- File List
+  model
+  - ProductVO
+  - ProductDAO
+  - DBInfo
+  controller
+  - DispatcherServlet : Servlet, FrontController
+  - HandlerMapping : Class, Controller 객체 생성
+  - Controller : Interface
+  - RegisterController : Class, Controller를 implements
+  - AllProductController : Class, Controller를 implements
+  - DetailProductController : Class, Controller를 implements
+  - DeleteController : Class, Controller를 implements
+  view
+  - index.jsp : 등록, 전체 상품 보기
+  - register_item.jsp : 등록 폼 제공
+  - list_item.jsp : 전체 상품 보기
+  - detail_item.jsp : 상세 상품 정보 보기
+  listener
+  - DriverLoader 
+  
+  구현 시간 : 오후 4시

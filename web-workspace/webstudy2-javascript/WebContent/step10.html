@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>javascript radio</title>
+<script>
+	function checkRadio(){
+		// 동일한 이름으로 명시되면 배열로 인식
+		// alert(document.radioForm.star.length);
+		// alert(document.radioForm.star.value);
+		// document.radioForm.reset();
+		
+		var radioComp = document.radioForm.star
+		
+		if(radioComp.value == ""){
+			alert("이름을 선탁하세요!");	
+		}
+		else{
+			alert(radioComp.value + " 찜!");
+		}
+		
+		document.radioForm.reset();
+	}
+</script>
+</head>
+<body>
+<!--radio를 선택하지 않고 button을 누르면 "이름을 선택하세요!" alert()
+     radio를 선택하고 button을 누르면 "? 찜!"  
+     이후 초기화-->
+<form name = "radioForm">
+<input type = "radio" name ="star" value = "Bourbon">Bourbon<br>
+<input type = "radio" name ="star" value = "V">V<br>
+<input type = "radio" name ="star" value = "P">P<br>
+<input type = "button" value = "선택" onclick = "checkRadio()">
+
+</form>
+</body>
+</html>
