@@ -1,4 +1,0 @@
-#Tomcat publish data
-#Thu Jun 29 23:54:29 KST 2017
-org.eclipse.jst.jee.server\:YOLOWA_FINAL=C\:\\Users\\Moon\\Desktop\\Saiden\\Employment\\java-kosta\\WAS\\final-tomcat\\webapps\\YOLOWA_FINAL
-org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\Moon\\.m2\\repository\\org\\springframework\\spring-web\\4.2.5.RELEASE\\spring-web-4.2.5.RELEASE.jar=C\:\\Users\\Moon\\Desktop\\Saiden\\Employment\\java-kosta\\WAS\\final-tomcat\\webapps\\YOLOWA_FINAL\\WEB-INF\\lib\\spring-web-4.2.5.RELEASE.jar

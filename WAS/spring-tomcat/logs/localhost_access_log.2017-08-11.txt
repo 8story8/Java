@@ -1,3 +1,0 @@
-127.0.0.1 - - [11/Aug/2017:14:04:08 +0900] "GET / HTTP/1.1" 200 11452
-0:0:0:0:0:0:0:1 - - [11/Aug/2017:14:04:17 +0900] "GET /springmvc22-security/ HTTP/1.1" 200 1705
-0:0:0:0:0:0:0:1 - - [11/Aug/2017:14:04:17 +0900] "GET /springmvc22-security/resources/css/home.css HTTP/1.1" 200 926

@@ -1,6 +1,0 @@
-127.0.0.1 - - [07/May/2017:12:51:56 +0900] "GET / HTTP/1.1" 200 11452
-0:0:0:0:0:0:0:1 - - [07/May/2017:12:52:42 +0900] "GET /springmvc10-member/ HTTP/1.1" 200 804
-0:0:0:0:0:0:0:1 - - [07/May/2017:12:52:44 +0900] "GET /favicon.ico HTTP/1.1" 304 -
-0:0:0:0:0:0:0:1 - - [07/May/2017:12:52:58 +0900] "GET /springmvc10-member/findMemberById.do?id=awea HTTP/1.1" 200 149
-0:0:0:0:0:0:0:1 - - [07/May/2017:12:52:59 +0900] "GET /springmvc10-member/index.do HTTP/1.1" 200 804
-0:0:0:0:0:0:0:1 - - [07/May/2017:12:53:02 +0900] "GET /springmvc10-member/registerView.do HTTP/1.1" 200 1839
